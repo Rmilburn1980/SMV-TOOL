@@ -1918,12 +1918,13 @@
 })();
 
 </script>
+<link rel="stylesheet" href="https://rmilburn1980.github.io/theme.css">
 </head>
 <body><a href="https://rmilburn1980.github.io/" style="display:block;padding:10px 20px;background:#11192B;border-bottom:1px solid #2A3A52;color:#00D9C0;font-size:14px;font-weight:600;text-decoration:none;">&larr; Back to portfolio hub</a>
 <x-dc>
 <helmet>
 <style>
-  html { background: #0B1929; }
+  html { background: #070a1a; }
   body { margin: 0; -webkit-font-smoothing: antialiased; font-variant-numeric: tabular-nums; }
   button, input, select { border-radius: 8px; }
   * { box-sizing: border-box; }
@@ -1931,33 +1932,33 @@
   a:hover { color: #90CAF9; }
   input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
   input[type=number] { -moz-appearance: textfield; }
-  input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 2px; background: #2E4A6F; outline: none; cursor: pointer; }
-  input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; background: #64B5F6; border: 3px solid #0B1929; box-shadow: 0 0 0 1px #64B5F6; cursor: pointer; border-radius: 4px; }
-  input[type=range]::-moz-range-thumb { width: 18px; height: 18px; background: #64B5F6; border: 3px solid #0B1929; box-shadow: 0 0 0 1px #64B5F6; cursor: pointer; border-radius: 4px; }
+  input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 2px; background: #454b92; outline: none; cursor: pointer; }
+  input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; background: #64B5F6; border: 3px solid #070a1a; box-shadow: 0 0 0 1px #64B5F6; cursor: pointer; border-radius: 4px; }
+  input[type=range]::-moz-range-thumb { width: 18px; height: 18px; background: #64B5F6; border: 3px solid #070a1a; box-shadow: 0 0 0 1px #64B5F6; cursor: pointer; border-radius: 4px; }
   select { -webkit-appearance: none; appearance: none; }
 </style>
 </helmet>
-<div style="min-height:100vh;background:#0B1929;color:#E2E8F0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding-bottom:64px">
+<div style="min-height:100vh;background:#070a1a;color:#f2f1ff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding-bottom:64px">
 
-  <div style="border-bottom:1px solid #1E3A5F;background:#112240;position:sticky;top:0;z-index:5">
+  <div style="border-bottom:1px solid #343a7a;background:#12143a;position:sticky;top:0;z-index:5">
     <div style="max-width:1240px;margin:0 auto;padding:14px 18px 0">
       <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:12px">
         <div>
-          <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#94A3B8;margin-bottom:4px">Industrial engineering · work measurement</div>
+          <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#bcbbdc;margin-bottom:4px">Industrial engineering · work measurement</div>
           <div style="font:600 20px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:-.01em">Standard Minute Value</div>
         </div>
         <div style="display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;padding-bottom:2px">
           <div>
-            <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;color:#94A3B8;margin-bottom:4px">RATING SCALE</div>
-            <div style="display:flex;border:1px solid #2E4A6F">
+            <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;color:#bcbbdc;margin-bottom:4px">RATING SCALE</div>
+            <div style="display:flex;border:1px solid #454b92">
               <button onClick="{{ sc100 }}" style="padding:5px 11px;border:none;background:{{ s100B }};color:{{ s100C }};cursor:pointer;font:500 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">100</button>
               <button onClick="{{ sc75 }}" style="padding:5px 11px;border:none;background:{{ s75B }};color:{{ s75C }};cursor:pointer;font:500 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">75</button>
             </div>
           </div>
           <div style="display:flex;gap:10px;align-items:center;padding-bottom:5px">
             <span style="display:flex;gap:7px;align-items:center;font:500 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:{{ saveCol }}"><span style="width:6px;height:6px;background:{{ saveDot }};display:block;border-radius:50%"></span>{{ saveTxt }}</span>
-            <button onClick="{{ loadExample }}" style="padding:4px 8px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em" style-hover="border-color:#64B5F6;color:#E2E8F0">EXAMPLE</button>
-            <button onClick="{{ clearSaved }}" style="padding:4px 8px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em" style-hover="border-color:#EF4444;color:#F0997B">CLEAR</button>
+            <button onClick="{{ loadExample }}" style="padding:4px 8px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em" style-hover="border-color:#64B5F6;color:#f2f1ff">EXAMPLE</button>
+            <button onClick="{{ clearSaved }}" style="padding:4px 8px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em" style-hover="border-color:#EF4444;color:#F0997B">CLEAR</button>
           </div>
         </div>
       </div>
@@ -1981,124 +1982,124 @@
     <sc-if value="{{ isGuide }}">
       <div style="display:flex;flex-direction:column;gap:14px;max-width:840px">
 
-        <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:20px">
+        <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:20px">
           <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#64B5F6;margin-bottom:12px">What this is for</div>
-          <p style="font-size:13px;line-height:1.65;color:#CBD5E1;margin:0;text-wrap:pretty">A standard minute value is the time a job should take when done at a normal working pace, including the rest a person needs to keep that pace up all day. It is the number production planning, costing, and line balancing all rely on.</p>
-          <p style="font-size:13px;line-height:1.65;color:#CBD5E1;margin:0;text-wrap:pretty;margin-top:12px">This dashboard takes you from a stopwatch at the machine to that figure, and then tracks how operators perform against it. You do not need prior training in work measurement — the study screen explains each step as you reach it.</p>
+          <p style="font-size:13px;line-height:1.65;color:#dcdbf2;margin:0;text-wrap:pretty">A standard minute value is the time a job should take when done at a normal working pace, including the rest a person needs to keep that pace up all day. It is the number production planning, costing, and line balancing all rely on.</p>
+          <p style="font-size:13px;line-height:1.65;color:#dcdbf2;margin:0;text-wrap:pretty;margin-top:12px">This dashboard takes you from a stopwatch at the machine to that figure, and then tracks how operators perform against it. You do not need prior training in work measurement — the study screen explains each step as you reach it.</p>
         </div>
 
-        <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:20px">
+        <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:20px">
           <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#64B5F6;margin-bottom:12px">How a study works</div>
           <div style="display:flex;flex-direction:column;gap:14px">
                 <div style="display:grid;grid-template-columns:28px 1fr;gap:12px">
                   <span style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6">1</span>
                   <div>
-                    <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:3px">Break the job into elements</div>
-                    <div style="font-size:12px;line-height:1.6;color:#94A3B8">An element is a step with a clear start and end — load the part, clamp it, run the weld. Timing steps separately shows you where the time actually goes, and lets you rate each one on its own.</div>
+                    <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:3px">Break the job into elements</div>
+                    <div style="font-size:12px;line-height:1.6;color:#bcbbdc">An element is a step with a clear start and end — load the part, clamp it, run the weld. Timing steps separately shows you where the time actually goes, and lets you rate each one on its own.</div>
                   </div>
                 </div>
                 <div style="display:grid;grid-template-columns:28px 1fr;gap:12px">
                   <span style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6">2</span>
                   <div>
-                    <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:3px">Time each element several times</div>
-                    <div style="font-size:12px;line-height:1.6;color:#94A3B8">Tap Record at the end of every cycle. One reading tells you nothing about a job that varies; ten gives you an average you can defend. The panel shows how many you need for the accuracy you asked for.</div>
+                    <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:3px">Time each element several times</div>
+                    <div style="font-size:12px;line-height:1.6;color:#bcbbdc">Tap Record at the end of every cycle. One reading tells you nothing about a job that varies; ten gives you an average you can defend. The panel shows how many you need for the accuracy you asked for.</div>
                   </div>
                 </div>
                 <div style="display:grid;grid-template-columns:28px 1fr;gap:12px">
                   <span style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6">3</span>
                   <div>
-                    <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:3px">Rate the pace</div>
-                    <div style="font-size:12px;line-height:1.6;color:#94A3B8">A stopwatch measures the worker you watched, not a standard worker. Rating corrects for that: 100 is normal pace, above means they were working faster than normal, below means slower. Observed time multiplied by the rating gives basic time.</div>
+                    <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:3px">Rate the pace</div>
+                    <div style="font-size:12px;line-height:1.6;color:#bcbbdc">A stopwatch measures the worker you watched, not a standard worker. Rating corrects for that: 100 is normal pace, above means they were working faster than normal, below means slower. Observed time multiplied by the rating gives basic time.</div>
                   </div>
                 </div>
                 <div style="display:grid;grid-template-columns:28px 1fr;gap:12px">
                   <span style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6">4</span>
                   <div>
-                    <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:3px">Add an allowance</div>
-                    <div style="font-size:12px;line-height:1.6;color:#94A3B8">Nobody works 480 minutes without pause. The allowance adds paid time for rest, personal needs, and conditions like heat or awkward posture. Basic time plus the allowance is the SMV.</div>
+                    <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:3px">Add an allowance</div>
+                    <div style="font-size:12px;line-height:1.6;color:#bcbbdc">Nobody works 480 minutes without pause. The allowance adds paid time for rest, personal needs, and conditions like heat or awkward posture. Basic time plus the allowance is the SMV.</div>
                   </div>
                 </div>
                 <div style="display:grid;grid-template-columns:28px 1fr;gap:12px">
                   <span style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6">5</span>
                   <div>
-                    <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:3px">Track against it</div>
-                    <div style="font-size:12px;line-height:1.6;color:#94A3B8">Once you have an SMV, a shift record of units produced tells you efficiency — how much of the paid time turned into output. Trends matter more than single shifts.</div>
+                    <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:3px">Track against it</div>
+                    <div style="font-size:12px;line-height:1.6;color:#bcbbdc">Once you have an SMV, a shift record of units produced tells you efficiency — how much of the paid time turned into output. Trends matter more than single shifts.</div>
                   </div>
                 </div>
           </div>
         </div>
 
-        <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:20px">
+        <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:20px">
           <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#A78BFA;margin-bottom:12px">Where things live</div>
           <div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">Run a study</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">The main screen. Study record, element table, stopwatch, readings, and the statistics that say whether the study is valid.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">Run a study</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">The main screen. Study record, element table, stopwatch, readings, and the statistics that say whether the study is valid.</span>
                 </div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">Calculate</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">Single-element SMV from an observed time, the ILO allowance table with workstation presets, line efficiency, and production target.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">Calculate</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">Single-element SMV from an observed time, the ILO allowance table with workstation presets, line efficiency, and production target.</span>
                 </div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">Track</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">Shift-by-shift efficiency per operator, with a trend and CSV export.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">Track</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">Shift-by-shift efficiency per operator, with a trend and CSV export.</span>
                 </div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">Reference</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">Every formula explained with worked examples, practice problems, rating calibration exercises, and MOST.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">Reference</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">Every formula explained with worked examples, practice problems, rating calibration exercises, and MOST.</span>
                 </div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">Summary</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">A one-page sheet of the current study — record, elements, allowance breakdown, SMV — for showing to someone else.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">Summary</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">A one-page sheet of the current study — record, elements, allowance breakdown, SMV — for showing to someone else.</span>
                 </div>
           </div>
         </div>
 
-        <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:20px">
+        <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:20px">
           <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#F59E0B;margin-bottom:12px">Terms you will see</div>
           <div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">Observed time</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">The raw stopwatch reading, in minutes.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">Observed time</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">The raw stopwatch reading, in minutes.</span>
                 </div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">Rating</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">Your judgement of pace against normal working pace. 100 is standard on the 100 scale, 75 on the 75 scale.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">Rating</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">Your judgement of pace against normal working pace. 100 is standard on the 100 scale, 75 on the 75 scale.</span>
                 </div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">Basic time</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">Observed time corrected for rating — the time at standard pace.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">Basic time</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">Observed time corrected for rating — the time at standard pace.</span>
                 </div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">Allowance</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">A percentage added to basic time for rest, personal needs and working conditions.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">Allowance</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">A percentage added to basic time for rest, personal needs and working conditions.</span>
                 </div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">SMV</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">Basic time plus allowance. The standard minute value.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">SMV</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">Basic time plus allowance. The standard minute value.</span>
                 </div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">CV%</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">How much the readings vary. Above about 20% means the job is inconsistent and worth investigating before you standardise it.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">CV%</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">How much the readings vary. Above about 20% means the job is inconsistent and worth investigating before you standardise it.</span>
                 </div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">Efficiency</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">SMV times units produced, divided by the time paid for. 100% means output matched the standard.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">Efficiency</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">SMV times units produced, divided by the time paid for. 100% means output matched the standard.</span>
                 </div>
-                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">MOST</span>
-                  <span style="font-size:12px;line-height:1.6;color:#94A3B8">A method that builds the time from the movements involved instead of timing them, so there is nothing to rate. Under Reference.</span>
+                <div style="display:grid;grid-template-columns:170px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font:600 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">MOST</span>
+                  <span style="font-size:12px;line-height:1.6;color:#bcbbdc">A method that builds the time from the movements involved instead of timing them, so there is nothing to rate. Under Reference.</span>
                 </div>
           </div>
         </div>
 
-        <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:20px">
+        <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:20px">
           <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#34D399;margin-bottom:12px">Your data</div>
-          <p style="font-size:13px;line-height:1.65;color:#CBD5E1;margin:0;text-wrap:pretty">Everything you enter is saved in this browser as you type, and is still there when you come back. Nothing is sent anywhere.</p>
-          <p style="font-size:13px;line-height:1.65;color:#CBD5E1;margin:0;text-wrap:pretty;margin-top:12px">The header carries three controls: the rating scale your plant uses, EXAMPLE to load a complete worked study for reference, and CLEAR to wipe everything and start fresh. Study data and operator logs both export as CSV.</p>
+          <p style="font-size:13px;line-height:1.65;color:#dcdbf2;margin:0;text-wrap:pretty">Everything you enter is saved in this browser as you type, and is still there when you come back. Nothing is sent anywhere.</p>
+          <p style="font-size:13px;line-height:1.65;color:#dcdbf2;margin:0;text-wrap:pretty;margin-top:12px">The header carries three controls: the rating scale your plant uses, EXAMPLE to load a complete worked study for reference, and CLEAR to wipe everything and start fresh. Study data and operator logs both export as CSV.</p>
           <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
-            <button onClick="{{ goObs }}" style="padding:9px 14px;background:#1D4E89;border:1px solid #2E75B6;color:#E2E8F0;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">Start a study</button>
-            <button onClick="{{ loadExample }}" style="padding:9px 14px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#F59E0B;color:#E2E8F0">Load the example</button>
+            <button onClick="{{ goObs }}" style="padding:9px 14px;background:#1D4E89;border:1px solid #2E75B6;color:#f2f1ff;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">Start a study</button>
+            <button onClick="{{ loadExample }}" style="padding:9px 14px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#F59E0B;color:#f2f1ff">Load the example</button>
           </div>
         </div>
       </div>
@@ -2107,44 +2108,44 @@
     <sc-if value="{{ isOv }}" hint-placeholder-val="{{ true }}">
       <div style="display:flex;flex-direction:column;gap:14px;max-width:880px">
 
-        <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:20px">
+        <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:20px">
           <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:18px">
             <div>
               <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#64B5F6;margin-bottom:6px">Study summary</div>
-              <div style="font:600 19px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">{{ sumTitle }}</div>
-              <div style="font-size:12px;color:#94A3B8;margin-top:5px">{{ sumMeta }}</div>
+              <div style="font:600 19px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">{{ sumTitle }}</div>
+              <div style="font-size:12px;color:#bcbbdc;margin-top:5px">{{ sumMeta }}</div>
             </div>
             <div style="text-align:right">
-              <div style="font:500 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#94A3B8;margin-bottom:5px">Product SMV</div>
+              <div style="font:500 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#bcbbdc;margin-bottom:5px">Product SMV</div>
               <div style="font:500 34px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6;line-height:1;white-space:nowrap">{{ prodSmvTxt }}</div>
             </div>
           </div>
 
           <sc-if value="{{ sumEmpty }}">
-            <p style="font-size:13px;line-height:1.6;color:#94A3B8;margin:0;border-top:1px solid #1E3A5F;padding-top:16px">No readings yet. Run a study to fill this sheet, or load the example from the header.</p>
+            <p style="font-size:13px;line-height:1.6;color:#bcbbdc;margin:0;border-top:1px solid #343a7a;padding-top:16px">No readings yet. Run a study to fill this sheet, or load the example from the header.</p>
           </sc-if>
 
           <sc-if value="{{ sumHasData }}">
-            <div style="border-top:1px solid #1E3A5F;padding-top:16px">
+            <div style="border-top:1px solid #343a7a;padding-top:16px">
               <div style="overflow-x:auto">
                 <div style="min-width:520px">
-                  <div style="display:grid;grid-template-columns:1.8fr 44px 84px 64px 84px 104px;gap:8px;padding-bottom:7px;border-bottom:1px solid #1E3A5F;font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">
+                  <div style="display:grid;grid-template-columns:1.8fr 44px 84px 64px 84px 104px;gap:8px;padding-bottom:7px;border-bottom:1px solid #343a7a;font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">
                     <span>ELEMENT</span><span style="text-align:right">n</span><span style="text-align:right">MEAN</span><span style="text-align:right">RATING</span><span style="text-align:right">BASIC</span><span style="text-align:right">SMV</span>
                   </div>
                   <sc-for list="{{ els }}" as="e" hint-placeholder-count="3">
-                    <div style="display:grid;grid-template-columns:1.8fr 44px 84px 64px 84px 104px;gap:8px;padding:8px 0;border-bottom:1px solid #1E3A5F;align-items:baseline">
-                      <span style="font-size:13px;color:#E2E8F0">{{ e.nameTxt }}</span>
+                    <div style="display:grid;grid-template-columns:1.8fr 44px 84px 64px 84px 104px;gap:8px;padding:8px 0;border-bottom:1px solid #343a7a;align-items:baseline">
+                      <span style="font-size:13px;color:#f2f1ff">{{ e.nameTxt }}</span>
                       <span style="text-align:right;font-size:12px;color:{{ e.nCol }}">{{ e.n }}</span>
-                      <span style="text-align:right;font-size:12px;color:#CBD5E1">{{ e.mean }}</span>
-                      <span style="text-align:right;font-size:12px;color:#CBD5E1">{{ e.r }}</span>
-                      <span style="text-align:right;font-size:12px;color:#CBD5E1">{{ e.bt }}</span>
+                      <span style="text-align:right;font-size:12px;color:#dcdbf2">{{ e.mean }}</span>
+                      <span style="text-align:right;font-size:12px;color:#dcdbf2">{{ e.r }}</span>
+                      <span style="text-align:right;font-size:12px;color:#dcdbf2">{{ e.bt }}</span>
                       <span style="text-align:right;font-size:13px;color:#64B5F6">{{ e.smv }}</span>
                     </div>
                   </sc-for>
                   <div style="display:grid;grid-template-columns:1.8fr 44px 84px 64px 84px 104px;gap:8px;padding-top:11px;align-items:baseline">
-                    <span style="font:500 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#94A3B8">Product total</span>
+                    <span style="font:500 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#bcbbdc">Product total</span>
                     <span></span><span></span><span></span>
-                    <span style="text-align:right;font-size:12px;color:#94A3B8">{{ prodBtTxt }}</span>
+                    <span style="text-align:right;font-size:12px;color:#bcbbdc">{{ prodBtTxt }}</span>
                     <span style="text-align:right;font:500 15px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6;white-space:nowrap">{{ prodSmvTxt }}</span>
                   </div>
                 </div>
@@ -2154,45 +2155,45 @@
         </div>
 
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;align-items:start">
-          <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+          <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
             <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#F59E0B;margin-bottom:14px">Allowance applied</div>
-            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #1E3A5F">
-              <span style="font-size:12px;color:#94A3B8">Constant (personal needs + basic fatigue)</span>
-              <span style="font-size:12px;color:#CBD5E1">9</span>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #343a7a">
+              <span style="font-size:12px;color:#bcbbdc">Constant (personal needs + basic fatigue)</span>
+              <span style="font-size:12px;color:#dcdbf2">9</span>
             </div>
             <sc-for list="{{ iloActive }}" as="a" hint-placeholder-count="4">
-              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:6px 0;border-bottom:1px solid #1E3A5F">
-                <span style="font-size:12px;color:#94A3B8">{{ a.lbl }}</span>
-                <span style="font-size:12px;color:#CBD5E1;white-space:nowrap">+{{ a.val }}</span>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:6px 0;border-bottom:1px solid #343a7a">
+                <span style="font-size:12px;color:#bcbbdc">{{ a.lbl }}</span>
+                <span style="font-size:12px;color:#dcdbf2;white-space:nowrap">+{{ a.val }}</span>
               </div>
             </sc-for>
             <div style="display:flex;justify-content:space-between;align-items:baseline;padding-top:12px">
-              <span style="font:500 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#94A3B8">In use</span>
+              <span style="font:500 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#bcbbdc">In use</span>
               <span style="font:500 22px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#F59E0B;line-height:1">{{ tsATxt }}</span>
             </div>
-            <p style="font-size:11px;line-height:1.55;color:#94A3B8;margin:10px 0 0">{{ allowNote }}</p>
+            <p style="font-size:11px;line-height:1.55;color:#bcbbdc;margin:10px 0 0">{{ allowNote }}</p>
           </div>
 
-          <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+          <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
             <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#A78BFA;margin-bottom:14px">Study basis</div>
-            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #1E3A5F">
-              <span style="font-size:12px;color:#94A3B8">Elements</span><span style="font-size:12px;color:#CBD5E1">{{ elCount }}</span>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #343a7a">
+              <span style="font-size:12px;color:#bcbbdc">Elements</span><span style="font-size:12px;color:#dcdbf2">{{ elCount }}</span>
             </div>
-            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #1E3A5F">
-              <span style="font-size:12px;color:#94A3B8">Readings taken</span><span style="font-size:12px;color:#CBD5E1">{{ sumReadings }}</span>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #343a7a">
+              <span style="font-size:12px;color:#bcbbdc">Readings taken</span><span style="font-size:12px;color:#dcdbf2">{{ sumReadings }}</span>
             </div>
-            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #1E3A5F">
-              <span style="font-size:12px;color:#94A3B8">Rating base</span><span style="font-size:12px;color:#CBD5E1">{{ scaleTxt }}</span>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #343a7a">
+              <span style="font-size:12px;color:#bcbbdc">Rating base</span><span style="font-size:12px;color:#dcdbf2">{{ scaleTxt }}</span>
             </div>
-            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #1E3A5F">
-              <span style="font-size:12px;color:#94A3B8">Confidence / accuracy</span><span style="font-size:12px;color:#CBD5E1">{{ sumConf }}</span>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #343a7a">
+              <span style="font-size:12px;color:#bcbbdc">Confidence / accuracy</span><span style="font-size:12px;color:#dcdbf2">{{ sumConf }}</span>
             </div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0">
-              <span style="font-size:12px;color:#94A3B8">Standard output, 480 min</span><span style="font-size:12px;color:#CBD5E1">{{ sumOutput }}</span>
+              <span style="font-size:12px;color:#bcbbdc">Standard output, 480 min</span><span style="font-size:12px;color:#dcdbf2">{{ sumOutput }}</span>
             </div>
             <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
-              <button onClick="{{ goObs }}" style="padding:9px 14px;background:#1D4E89;border:1px solid #2E75B6;color:#E2E8F0;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">Open the study</button>
-              <button onClick="{{ csvStudy }}" style="padding:9px 14px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#34D399;color:#E2E8F0">Export CSV</button>
+              <button onClick="{{ goObs }}" style="padding:9px 14px;background:#1D4E89;border:1px solid #2E75B6;color:#f2f1ff;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">Open the study</button>
+              <button onClick="{{ csvStudy }}" style="padding:9px 14px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#34D399;color:#f2f1ff">Export CSV</button>
             </div>
           </div>
         </div>
@@ -2204,79 +2205,79 @@
         <sc-if value="{{ isTs }}" hint-placeholder-val="{{ true }}">
           <div style="display:flex;flex-direction:column;gap:14px">
 
-            <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+            <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px">
                 <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#64B5F6">Study record</div>
-                <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">{{ studyLabel }}</div>
+                <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">{{ studyLabel }}</div>
               </div>
               <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px">
                 <div>
-                  <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Product</label>
-                  <input type="text" value="{{ mdProduct }}" placeholder="e.g. Door panel" onChange="{{ onMdProduct }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;border-radius:8px;color:#E2E8F0;font:400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none" style-focus="border-color:#64B5F6">
+                  <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Product</label>
+                  <input type="text" value="{{ mdProduct }}" placeholder="e.g. Door panel" onChange="{{ onMdProduct }}" style="width:100%;background:#070a1a;border:1px solid #454b92;border-radius:8px;color:#f2f1ff;font:400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none" style-focus="border-color:#64B5F6">
                 </div>
                 <div>
-                  <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Operation</label>
-                  <input type="text" value="{{ mdOp }}" placeholder="e.g. Weld seam" onChange="{{ onMdOp }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;border-radius:8px;color:#E2E8F0;font:400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none" style-focus="border-color:#64B5F6">
+                  <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Operation</label>
+                  <input type="text" value="{{ mdOp }}" placeholder="e.g. Weld seam" onChange="{{ onMdOp }}" style="width:100%;background:#070a1a;border:1px solid #454b92;border-radius:8px;color:#f2f1ff;font:400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none" style-focus="border-color:#64B5F6">
                 </div>
                 <div>
-                  <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Observer</label>
-                  <input type="text" value="{{ mdObserver }}" placeholder="Your name" onChange="{{ onMdObserver }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;border-radius:8px;color:#E2E8F0;font:400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none" style-focus="border-color:#64B5F6">
+                  <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Observer</label>
+                  <input type="text" value="{{ mdObserver }}" placeholder="Your name" onChange="{{ onMdObserver }}" style="width:100%;background:#070a1a;border:1px solid #454b92;border-radius:8px;color:#f2f1ff;font:400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none" style-focus="border-color:#64B5F6">
                 </div>
                 <div>
-                  <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Date</label>
-                  <input type="date" value="{{ mdDate }}" onChange="{{ onMdDate }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;border-radius:8px;color:#E2E8F0;font:400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none" style-focus="border-color:#64B5F6">
+                  <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Date</label>
+                  <input type="date" value="{{ mdDate }}" onChange="{{ onMdDate }}" style="width:100%;background:#070a1a;border:1px solid #454b92;border-radius:8px;color:#f2f1ff;font:400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none" style-focus="border-color:#64B5F6">
                 </div>
               </div>
             </div>
 
             <sc-if value="{{ guideOn }}">
-            <div style="background:#1E3A5F;border:1px solid #2E75B6;border-radius:12px;padding:18px">
+            <div style="background:#343a7a;border:1px solid #2E75B6;border-radius:12px;padding:18px">
               <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#90CAF9;margin-bottom:12px">Your first study — three steps</div>
               <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
                 <div>
-                  <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:4px">1 · Name what you are timing</div>
-                  <div style="font-size:12px;line-height:1.55;color:#CBD5E1">One row per element — a step with a clear start and end, like "load panel into jig". Three to six is typical.</div>
+                  <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:4px">1 · Name what you are timing</div>
+                  <div style="font-size:12px;line-height:1.55;color:#dcdbf2">One row per element — a step with a clear start and end, like "load panel into jig". Three to six is typical.</div>
                 </div>
                 <div>
-                  <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:4px">2 · Time it ten times</div>
-                  <div style="font-size:12px;line-height:1.55;color:#CBD5E1">Start the stopwatch and tap Record at the end of each cycle. Ten readings is the usual minimum; the panel tells you when you have enough.</div>
+                  <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:4px">2 · Time it ten times</div>
+                  <div style="font-size:12px;line-height:1.55;color:#dcdbf2">Start the stopwatch and tap Record at the end of each cycle. Ten readings is the usual minimum; the panel tells you when you have enough.</div>
                 </div>
                 <div>
-                  <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:4px">3 · Rate the pace you saw</div>
-                  <div style="font-size:12px;line-height:1.55;color:#CBD5E1">Say how the operator's speed compared with a normal working pace. The anchors under the table explain the numbers, and Reference has practice.</div>
+                  <div style="font:600 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:4px">3 · Rate the pace you saw</div>
+                  <div style="font-size:12px;line-height:1.55;color:#dcdbf2">Say how the operator's speed compared with a normal working pace. The anchors under the table explain the numbers, and Reference has practice.</div>
                 </div>
               </div>
             </div>
             </sc-if>
 
-            <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+            <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px">
                 <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#64B5F6">Element breakdown</div>
-                <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">RATING BASE {{ scaleTxt }} · ALLOWANCE {{ allowTxt }}</div>
+                <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">RATING BASE {{ scaleTxt }} · ALLOWANCE {{ allowTxt }}</div>
               </div>
 
               <div style="overflow-x:auto">
                 <div style="min-width:640px">
-                  <div style="display:grid;grid-template-columns:26px 1.6fr 52px 82px 62px 82px 112px 30px;gap:8px;padding:0 0 7px;border-bottom:1px solid #1E3A5F;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">
+                  <div style="display:grid;grid-template-columns:26px 1.6fr 52px 82px 62px 82px 112px 30px;gap:8px;padding:0 0 7px;border-bottom:1px solid #343a7a;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">
                     <span></span><span>ELEMENT</span><span style="text-align:right">n</span><span style="text-align:right">MEAN</span><span style="text-align:right">RATING</span><span style="text-align:right">BASIC</span><span style="text-align:right">SMV</span><span></span>
                   </div>
                   <sc-for list="{{ els }}" as="e" hint-placeholder-count="3">
-                    <div style="display:grid;grid-template-columns:26px 1.6fr 52px 82px 62px 82px 112px 30px;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid #1E3A5F;background:{{ e.rowBg }}">
+                    <div style="display:grid;grid-template-columns:26px 1.6fr 52px 82px 62px 82px 112px 30px;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid #343a7a;background:{{ e.rowBg }}">
                       <button onClick="{{ e.select }}" style="width:20px;height:20px;padding:0;background:{{ e.dotBg }};border:1px solid {{ e.dotBd }};cursor:pointer;font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:{{ e.dotC }}">{{ e.num }}</button>
-                      <input type="text" value="{{ e.name }}" placeholder="Element name" onChange="{{ e.onName }}" style="width:100%;background:transparent;border:none;border-bottom:1px solid #1E3A5F;color:#E2E8F0;font:400 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:4px 2px;outline:none" style-focus="border-bottom-color:#64B5F6">
+                      <input type="text" value="{{ e.name }}" placeholder="Element name" onChange="{{ e.onName }}" style="width:100%;background:transparent;border:none;border-bottom:1px solid #343a7a;color:#f2f1ff;font:400 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:4px 2px;outline:none" style-focus="border-bottom-color:#64B5F6">
                       <span style="text-align:right;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:{{ e.nCol }}">{{ e.n }}</span>
-                      <span style="text-align:right;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#CBD5E1">{{ e.mean }}</span>
-                      <input type="number" value="{{ e.r }}" onChange="{{ e.onR }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:4px 6px;outline:none;border-radius:8px;text-align:right" style-focus="border-color:#64B5F6">
-                      <span style="text-align:right;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#CBD5E1">{{ e.bt }}</span>
+                      <span style="text-align:right;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#dcdbf2">{{ e.mean }}</span>
+                      <input type="number" value="{{ e.r }}" onChange="{{ e.onR }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:4px 6px;outline:none;border-radius:8px;text-align:right" style-focus="border-color:#64B5F6">
+                      <span style="text-align:right;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#dcdbf2">{{ e.bt }}</span>
                       <span style="text-align:right;font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6">{{ e.smv }}</span>
-                      <button onClick="{{ e.remove }}" style="width:22px;height:22px;padding:0;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif" style-hover="border-color:#EF4444;color:#F0997B">×</button>
+                      <button onClick="{{ e.remove }}" style="width:22px;height:22px;padding:0;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif" style-hover="border-color:#EF4444;color:#F0997B">×</button>
                     </div>
                   </sc-for>
                   <div style="display:grid;grid-template-columns:26px 1.6fr 52px 82px 62px 82px 112px 30px;gap:8px;align-items:baseline;padding:11px 0 0">
                     <span></span>
-                    <span style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#94A3B8">Product total</span>
+                    <span style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#bcbbdc">Product total</span>
                     <span></span><span></span><span></span>
-                    <span style="text-align:right;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8">{{ prodBtTxt }}</span>
+                    <span style="text-align:right;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc">{{ prodBtTxt }}</span>
                     <span style="text-align:right;white-space:nowrap;font:500 16px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6">{{ prodSmvTxt }}</span>
                     <span></span>
                   </div>
@@ -2284,31 +2285,31 @@
               </div>
 
               <sc-if value="{{ plainOn }}">
-                <p style="font-size:13px;line-height:1.6;color:#CBD5E1;margin:14px 0 0;border-top:1px solid #1E3A5F;padding-top:14px">{{ plainSmvTxt }}</p>
+                <p style="font-size:13px;line-height:1.6;color:#dcdbf2;margin:14px 0 0;border-top:1px solid #343a7a;padding-top:14px">{{ plainSmvTxt }}</p>
               </sc-if>
               <div style="display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;margin-top:10px">
-                <p style="font-size:11px;line-height:1.55;color:#94A3B8;margin:0;flex:1;min-width:240px">{{ anchorTxt }}</p>
-                <button onClick="{{ goPrac }}" style="padding:7px 12px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap" style-hover="border-color:#F59E0B;color:#E2E8F0">Practise rating</button>
+                <p style="font-size:11px;line-height:1.55;color:#bcbbdc;margin:0;flex:1;min-width:240px">{{ anchorTxt }}</p>
+                <button onClick="{{ goPrac }}" style="padding:7px 12px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap" style-hover="border-color:#F59E0B;color:#f2f1ff">Practise rating</button>
               </div>
               <sc-if value="{{ flatRating }}">
                 <p style="font-size:12px;line-height:1.55;color:#FAC775;background:#412402;border:1px solid #D97706;border-radius:8px;padding:10px 12px;margin:10px 0 0">{{ flatRatingTxt }}</p>
               </sc-if>
 
-              <div style="display:flex;height:10px;margin-top:14px;background:#0B1929;border:1px solid #1E3A5F">
+              <div style="display:flex;height:10px;margin-top:14px;background:#070a1a;border:1px solid #343a7a">
                 <sc-for list="{{ shares }}" as="sh" hint-placeholder-count="3">
                   <div style="width:{{ sh.w }};background:{{ sh.c }};transition:width .35s ease"></div>
                 </sc-for>
               </div>
               <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px">
                 <sc-for list="{{ shares }}" as="sh" hint-placeholder-count="3">
-                  <span style="display:flex;align-items:center;gap:6px;font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8"><span style="width:8px;height:8px;background:{{ sh.c }};display:block"></span>{{ sh.lbl }}</span>
+                  <span style="display:flex;align-items:center;gap:6px;font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc"><span style="width:8px;height:8px;background:{{ sh.c }};display:block"></span>{{ sh.lbl }}</span>
                 </sc-for>
               </div>
 
               <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
-                <button onClick="{{ addEl }}" style="padding:9px 14px;background:transparent;border:1px solid #2E4A6F;color:#CBD5E1;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6">Add element</button>
-                <button onClick="{{ sendProd }}" style="padding:9px 14px;background:#1D4E89;border:1px solid #2E75B6;color:#E2E8F0;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">Send product SMV to calculator</button>
-                <button onClick="{{ csvStudy }}" style="padding:9px 14px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#34D399;color:#E2E8F0">Export study CSV</button>
+                <button onClick="{{ addEl }}" style="padding:9px 14px;background:transparent;border:1px solid #454b92;color:#dcdbf2;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6">Add element</button>
+                <button onClick="{{ sendProd }}" style="padding:9px 14px;background:#1D4E89;border:1px solid #2E75B6;color:#f2f1ff;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">Send product SMV to calculator</button>
+                <button onClick="{{ csvStudy }}" style="padding:9px 14px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#34D399;color:#f2f1ff">Export study CSV</button>
               </div>
               <sc-if value="{{ sent }}">
                 <p style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#2E9E86;margin:10px 0 0">SENT — OPEN THE CALCULATE TAB TO CONTINUE</p>
@@ -2316,49 +2317,49 @@
             </div>
 
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:14px;align-items:start">
-              <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+              <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
                 <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px">
                   <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#64B5F6">Readings</div>
-                  <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8">{{ selName }}</div>
+                  <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc">{{ selName }}</div>
                 </div>
 
-                <div style="background:#0B1929;border:1px solid #1E3A5F;border-radius:8px;padding:14px;margin-bottom:16px">
+                <div style="background:#070a1a;border:1px solid #343a7a;border-radius:8px;padding:14px;margin-bottom:16px">
                   <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
                     <div>
                       <div style="font:500 34px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:{{ swCol }};line-height:1">{{ swMain }}</div>
-                      <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;color:#94A3B8;margin-top:5px">{{ swSub }}</div>
+                      <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;color:#bcbbdc;margin-top:5px">{{ swSub }}</div>
                     </div>
                     <div style="display:flex;gap:7px;flex-wrap:wrap">
                       <button onClick="{{ swToggle }}" style="min-width:74px;min-height:44px;padding:0 16px;background:{{ swBtnBg }};border:1px solid {{ swBtnBd }};color:{{ swBtnC }};cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase">{{ swBtnTxt }}</button>
-                      <button onClick="{{ swLap }}" style="min-width:74px;min-height:44px;padding:0 16px;background:#1D4E89;border:1px solid #2E75B6;color:#E2E8F0;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">Record</button>
-                      <button onClick="{{ swReset }}" style="min-width:44px;min-height:44px;padding:0 14px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6;color:#E2E8F0">Reset</button>
+                      <button onClick="{{ swLap }}" style="min-width:74px;min-height:44px;padding:0 16px;background:#1D4E89;border:1px solid #2E75B6;color:#f2f1ff;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">Record</button>
+                      <button onClick="{{ swReset }}" style="min-width:44px;min-height:44px;padding:0 14px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6;color:#f2f1ff">Reset</button>
                     </div>
                   </div>
-                  <p style="font-size:11px;line-height:1.6;color:#94A3B8;margin:12px 0 0">Snapback timing: Record writes the split since the last tap into the next free slot below and restarts the count.</p>
+                  <p style="font-size:11px;line-height:1.6;color:#bcbbdc;margin:12px 0 0">Snapback timing: Record writes the split since the last tap into the next free slot below and restarts the count.</p>
                 </div>
 
                 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:8px;margin-bottom:16px">
                   <sc-for list="{{ readings }}" as="r" hint-placeholder-count="10">
                     <div>
-                      <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8;margin-bottom:4px">{{ r.label }}</div>
+                      <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc;margin-bottom:4px">{{ r.label }}</div>
                       <sc-if value="{{ r.flagged }}">
                         <input type="number" step="0.001" min="0" placeholder="—" value="{{ r.v }}" onChange="{{ r.onChange }}" style="width:100%;background:#412402;border:1px solid #D97706;color:#FAC775;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px">
                       </sc-if>
                       <sc-if value="{{ r.ok }}" hint-placeholder-val="{{ true }}">
-                        <input type="number" step="0.001" min="0" placeholder="—" value="{{ r.v }}" onChange="{{ r.onChange }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
+                        <input type="number" step="0.001" min="0" placeholder="—" value="{{ r.v }}" onChange="{{ r.onChange }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
                       </sc-if>
                     </div>
                   </sc-for>
                 </div>
 
-                <div style="background:#0B1929;border:1px solid #1E3A5F;border-radius:8px;padding:12px 14px 10px;margin-bottom:16px">
+                <div style="background:#070a1a;border:1px solid #343a7a;border-radius:8px;padding:12px 14px 10px;margin-bottom:16px">
                   <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
-                    <span style="font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;color:#94A3B8">DISTRIBUTION</span>
-                    <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8">{{ ch.scaleTxt }}</span>
+                    <span style="font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;color:#bcbbdc">DISTRIBUTION</span>
+                    <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc">{{ ch.scaleTxt }}</span>
                   </div>
                   <svg viewBox="0 0 260 96" width="100%" style="display:block">
                     <sc-if value="{{ ch.noData }}">
-                      <text x="130" y="50" text-anchor="middle" font-size="9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#94A3B8">ENTER 2+ READINGS</text>
+                      <text x="130" y="50" text-anchor="middle" font-size="9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">ENTER 2+ READINGS</text>
                     </sc-if>
                     <sc-if value="{{ ch.hasData }}">
                       <g>
@@ -2375,21 +2376,21 @@
                         <rect x="{{ ch.b8.x }}" y="{{ ch.b8.y }}" width="16" height="{{ ch.b8.h }}" fill="{{ ch.b8.f }}"></rect>
                         <rect x="{{ ch.b9.x }}" y="{{ ch.b9.y }}" width="16" height="{{ ch.b9.h }}" fill="{{ ch.b9.f }}"></rect>
                         <text x="226" y="{{ ch.meanLblY }}" font-size="7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#2E9E86">x̄</text>
-                        <line x1="0" y1="78" x2="222" y2="78" stroke="#1E3A5F" stroke-width="1"></line>
-                        <text x="11" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#94A3B8">1</text>
-                        <text x="33" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#94A3B8">2</text>
-                        <text x="55" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#94A3B8">3</text>
-                        <text x="77" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#94A3B8">4</text>
-                        <text x="99" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#94A3B8">5</text>
-                        <text x="121" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#94A3B8">6</text>
-                        <text x="143" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#94A3B8">7</text>
-                        <text x="165" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#94A3B8">8</text>
-                        <text x="187" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#94A3B8">9</text>
-                        <text x="209" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#94A3B8">10</text>
+                        <line x1="0" y1="78" x2="222" y2="78" stroke="#343a7a" stroke-width="1"></line>
+                        <text x="11" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">1</text>
+                        <text x="33" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">2</text>
+                        <text x="55" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">3</text>
+                        <text x="77" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">4</text>
+                        <text x="99" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">5</text>
+                        <text x="121" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">6</text>
+                        <text x="143" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">7</text>
+                        <text x="165" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">8</text>
+                        <text x="187" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">9</text>
+                        <text x="209" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">10</text>
                       </g>
                     </sc-if>
                   </svg>
-                  <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;color:#94A3B8">
+                  <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;color:#bcbbdc">
                     <span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;background:#2E75B6;display:block"></span>READING</span>
                     <span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;background:#EF4444;display:block"></span>OUTLIER</span>
                     <span style="display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;background:#412402;display:block"></span>±2 SD BAND</span>
@@ -2399,38 +2400,38 @@
 
                 <div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:16px">
                   <div>
-                    <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8;margin-bottom:5px">CONFIDENCE</div>
-                    <div style="display:flex;border:1px solid #2E4A6F">
+                    <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc;margin-bottom:5px">CONFIDENCE</div>
+                    <div style="display:flex;border:1px solid #454b92">
                       <button onClick="{{ conf90 }}" style="padding:6px 12px;border:none;background:{{ c90B }};color:{{ c90C }};cursor:pointer;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">90%</button>
                       <button onClick="{{ conf95 }}" style="padding:6px 12px;border:none;background:{{ c95B }};color:{{ c95C }};cursor:pointer;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">95%</button>
                     </div>
                   </div>
                   <div>
-                    <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8;margin-bottom:5px">ACCURACY</div>
-                    <div style="display:flex;border:1px solid #2E4A6F">
+                    <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc;margin-bottom:5px">ACCURACY</div>
+                    <div style="display:flex;border:1px solid #454b92">
                       <button onClick="{{ acc5 }}" style="padding:6px 12px;border:none;background:{{ a5B }};color:{{ a5C }};cursor:pointer;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">±5%</button>
                       <button onClick="{{ acc10 }}" style="padding:6px 12px;border:none;background:{{ a10B }};color:{{ a10C }};cursor:pointer;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif">±10%</button>
                     </div>
                   </div>
                 </div>
 
-                <div style="display:flex;justify-content:space-between;font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.06em;color:#94A3B8;margin-bottom:6px">
+                <div style="display:flex;justify-content:space-between;font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.06em;color:#bcbbdc;margin-bottom:6px">
                   <span>STUDY PROGRESS</span><span>{{ opTxt }}</span>
                 </div>
-                <div style="height:4px;background:#0B1929;border:1px solid #1E3A5F">
+                <div style="height:4px;background:#070a1a;border:1px solid #343a7a">
                   <div style="height:100%;width:{{ opW }};background:{{ opCol }};transition:width .4s ease"></div>
                 </div>
                 <div style="margin-top:16px">
-                  <button onClick="{{ clearReadings }}" style="padding:9px 14px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6;color:#E2E8F0">Clear this element</button>
+                  <button onClick="{{ clearReadings }}" style="padding:9px 14px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6;color:#f2f1ff">Clear this element</button>
                 </div>
               </div>
 
-              <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+              <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
                 <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#A78BFA;margin-bottom:14px">Statistics — {{ selName }}</div>
                 <sc-for list="{{ stats }}" as="s" hint-placeholder-count="6">
-                  <div style="display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                    <span style="font-size:12px;color:#94A3B8">{{ s.k }}</span>
-                    <span style="font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">{{ s.v }}</span>
+                  <div style="display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid #343a7a">
+                    <span style="font-size:12px;color:#bcbbdc">{{ s.k }}</span>
+                    <span style="font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">{{ s.v }}</span>
                   </div>
                 </sc-for>
 
@@ -2444,13 +2445,13 @@
                   <p style="font-size:12px;line-height:1.55;color:#FAC775;margin:10px 0 0">{{ outlierTxt }}</p>
                 </sc-if>
 
-                <div style="height:1px;background:#1E3A5F;margin:18px 0 14px"></div>
-                <div style="display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font-size:12px;color:#94A3B8">Element basic time</span>
-                  <span style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#CBD5E1">{{ selBT }}</span>
+                <div style="height:1px;background:#343a7a;margin:18px 0 14px"></div>
+                <div style="display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font-size:12px;color:#bcbbdc">Element basic time</span>
+                  <span style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#dcdbf2">{{ selBT }}</span>
                 </div>
                 <div style="display:flex;justify-content:space-between;align-items:baseline;padding:12px 0 0">
-                  <span style="font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#94A3B8">Element SMV</span>
+                  <span style="font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#bcbbdc">Element SMV</span>
                   <span style="font:500 22px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6">{{ selSMV }}</span>
                 </div>
               </div>
@@ -2464,133 +2465,133 @@
     <sc-if value="{{ isCalc }}">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px;align-items:start">
 
-        <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+        <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
           <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#64B5F6;margin-bottom:16px">SMV calculator</div>
 
-          <label style="display:block;font-size:11px;letter-spacing:.06em;color:#94A3B8;margin-bottom:5px">Observed time</label>
+          <label style="display:block;font-size:11px;letter-spacing:.06em;color:#bcbbdc;margin-bottom:5px">Observed time</label>
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
-            <input type="number" step="0.001" min="0.001" value="{{ ot }}" onChange="{{ onOt }}" style="flex:1;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:9px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
-            <span style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8">MIN</span>
+            <input type="number" step="0.001" min="0.001" value="{{ ot }}" onChange="{{ onOt }}" style="flex:1;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:9px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
+            <span style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc">MIN</span>
           </div>
 
           <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px">
-            <label style="font-size:11px;letter-spacing:.06em;color:#94A3B8">Worker rating · base {{ scaleTxt }}</label>
+            <label style="font-size:11px;letter-spacing:.06em;color:#bcbbdc">Worker rating · base {{ scaleTxt }}</label>
             <span style="font:500 15px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6">{{ ratingTxt }}</span>
           </div>
           <input type="range" min="{{ rMin }}" max="{{ rMax }}" step="1" value="{{ rating }}" onChange="{{ onRating }}" style="margin-bottom:6px">
-          <div style="display:flex;justify-content:space-between;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8;margin-bottom:16px">
+          <div style="display:flex;justify-content:space-between;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc;margin-bottom:16px">
             <sc-for list="{{ rTicks }}" as="tk" hint-placeholder-count="5">
               <span>{{ tk.v }}</span>
             </sc-for>
           </div>
 
-          <label style="display:block;font-size:11px;letter-spacing:.06em;color:#94A3B8;margin-bottom:5px">Allowance</label>
+          <label style="display:block;font-size:11px;letter-spacing:.06em;color:#bcbbdc;margin-bottom:5px">Allowance</label>
           <div style="display:flex;align-items:center;gap:8px">
-            <input type="number" step="1" min="0" max="60" value="{{ allow }}" onChange="{{ onAllow }}" style="flex:1;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:9px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
-            <span style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8">%</span>
+            <input type="number" step="1" min="0" max="60" value="{{ allow }}" onChange="{{ onAllow }}" style="flex:1;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:9px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
+            <span style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc">%</span>
           </div>
-          <p style="font-size:11px;line-height:1.55;color:#94A3B8;margin:7px 0 0">Set by the ILO table below — override here if your plant uses an agreed figure.</p>
+          <p style="font-size:11px;line-height:1.55;color:#bcbbdc;margin:7px 0 0">Set by the ILO table below — override here if your plant uses an agreed figure.</p>
 
-          <div style="height:1px;background:#1E3A5F;margin:18px 0 14px"></div>
+          <div style="height:1px;background:#343a7a;margin:18px 0 14px"></div>
 
           <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px">
-            <span style="font-size:12px;color:#94A3B8">Basic time</span>
-            <span style="font:500 15px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#CBD5E1">{{ btTxt }}</span>
+            <span style="font-size:12px;color:#bcbbdc">Basic time</span>
+            <span style="font:500 15px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#dcdbf2">{{ btTxt }}</span>
           </div>
           <div style="display:flex;justify-content:space-between;align-items:baseline;padding-bottom:14px">
-            <span style="font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#94A3B8">SMV</span>
+            <span style="font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#bcbbdc">SMV</span>
             <span style="font:500 34px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6;line-height:1">{{ smvTxt }}</span>
           </div>
-          <div style="display:flex;height:22px;background:#0B1929;border:1px solid #1E3A5F">
+          <div style="display:flex;height:22px;background:#070a1a;border:1px solid #343a7a">
             <div style="width:{{ barBT }};background:#1D4E89;display:flex;align-items:center;justify-content:center;overflow:hidden;font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;color:#90CAF9;transition:width .35s ease">{{ barBTLbl }}</div>
             <div style="width:{{ barA }};background:#8A4B12;display:flex;align-items:center;justify-content:center;overflow:hidden;font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;color:#FAC775;transition:width .35s ease">{{ barALbl }}</div>
           </div>
           <div style="display:flex;gap:16px;margin-top:8px">
-            <span style="display:flex;align-items:center;gap:6px;font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8"><span style="width:8px;height:8px;background:#1D4E89;display:block"></span>BASIC TIME</span>
-            <span style="display:flex;align-items:center;gap:6px;font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8"><span style="width:8px;height:8px;background:#8A4B12;display:block"></span>ALLOWANCE</span>
+            <span style="display:flex;align-items:center;gap:6px;font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc"><span style="width:8px;height:8px;background:#1D4E89;display:block"></span>BASIC TIME</span>
+            <span style="display:flex;align-items:center;gap:6px;font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc"><span style="width:8px;height:8px;background:#8A4B12;display:block"></span>ALLOWANCE</span>
           </div>
         </div>
 
                 <div style="display:flex;flex-direction:column;gap:14px">
-          <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+          <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
             <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#34D399;margin-bottom:16px">Line efficiency</div>
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:10px">
               <div>
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">SMV</label>
-                <input type="number" step="0.001" value="{{ es }}" onChange="{{ onEs }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">SMV</label>
+                <input type="number" step="0.001" value="{{ es }}" onChange="{{ onEs }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
               </div>
               <div>
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Units produced</label>
-                <input type="number" value="{{ eu }}" onChange="{{ onEu }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Units produced</label>
+                <input type="number" value="{{ eu }}" onChange="{{ onEu }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
               </div>
               <div>
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Shift time (min)</label>
-                <input type="number" value="{{ et }}" onChange="{{ onEt }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Shift time (min)</label>
+                <input type="number" value="{{ et }}" onChange="{{ onEt }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
               </div>
               <div>
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Workers</label>
-                <input type="number" value="{{ ew }}" onChange="{{ onEw }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Workers</label>
+                <input type="number" value="{{ ew }}" onChange="{{ onEw }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
               </div>
             </div>
             <div style="margin-top:16px;max-width:280px;margin-left:auto;margin-right:auto;position:relative">
               <svg viewBox="-10 -10 122 74" width="100%" style="display:block">
-                <g stroke="#64748B" stroke-width="0.7">
+                <g stroke="#8f8eb8" stroke-width="0.7">
                   <line x1="6.12" y1="31.82" x2="8.42" y2="32.78"></line>
                   <line x1="31.82" y1="6.12" x2="32.78" y2="8.42"></line>
                   <line x1="68.18" y1="6.12" x2="67.22" y2="8.42"></line>
                   <line x1="93.88" y1="31.82" x2="91.58" y2="32.78"></line>
                 </g>
-                <g stroke="#64748B" stroke-width="0.9">
+                <g stroke="#8f8eb8" stroke-width="0.9">
                   <line x1="1" y1="50" x2="5" y2="50"></line>
                   <line x1="15.35" y1="15.35" x2="18.18" y2="18.18"></line>
                   <line x1="50" y1="1" x2="50" y2="5"></line>
                   <line x1="84.65" y1="15.35" x2="81.82" y2="18.18"></line>
                   <line x1="99" y1="50" x2="95" y2="50"></line>
                 </g>
-                <g font-size="4.6" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#94A3B8" text-anchor="middle">
+                <g font-size="4.6" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc" text-anchor="middle">
                   <text x="-3.5" y="51.6">0</text>
                   <text x="12.5" y="15">25</text>
                   <text x="50" y="-2.6">50</text>
                   <text x="87.5" y="15">75</text>
                   <text x="103.5" y="51.6">100</text>
                 </g>
-                <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#1E3A5F" stroke-width="7"></path>
+                <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#343a7a" stroke-width="7"></path>
                 <path d="{{ garcD }}" fill="none" stroke="{{ gaugeCol }}" stroke-width="7"></path>
-                <text x="50" y="55" text-anchor="middle" font-size="5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" letter-spacing="0.8" fill="#94A3B8">EFFICIENCY</text>
+                <text x="50" y="55" text-anchor="middle" font-size="5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" letter-spacing="0.8" fill="#bcbbdc">EFFICIENCY</text>
               </svg>
               <div style="position:absolute;left:0;right:0;top:62%;transform:translateY(-50%);text-align:center;font:500 30px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;line-height:1;color:{{ gaugeCol }}">{{ gaugeTxt }}</div>
             </div>
           </div>
 
-          <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+          <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
             <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#F59E0B;margin-bottom:16px">Production target</div>
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:10px">
               <div>
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">SMV</label>
-                <input type="number" step="0.001" value="{{ tgs }}" onChange="{{ onTgs }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">SMV</label>
+                <input type="number" step="0.001" value="{{ tgs }}" onChange="{{ onTgs }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
               </div>
               <div>
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Shift time (min)</label>
-                <input type="number" value="{{ tgt }}" onChange="{{ onTgt }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Shift time (min)</label>
+                <input type="number" value="{{ tgt }}" onChange="{{ onTgt }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
               </div>
               <div>
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Workers</label>
-                <input type="number" value="{{ tgw }}" onChange="{{ onTgw }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Workers</label>
+                <input type="number" value="{{ tgw }}" onChange="{{ onTgw }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
               </div>
               <div>
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Target efficiency %</label>
-                <input type="number" value="{{ tge }}" onChange="{{ onTge }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Target efficiency %</label>
+                <input type="number" value="{{ tge }}" onChange="{{ onTge }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#64B5F6">
               </div>
             </div>
-            <div style="height:1px;background:#1E3A5F;margin:16px 0 12px"></div>
+            <div style="height:1px;background:#343a7a;margin:16px 0 12px"></div>
             <div style="font:500 40px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#F59E0B;line-height:1">{{ tgtOut }}</div>
-            <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#94A3B8;margin-top:6px">Units per shift</div>
+            <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#bcbbdc;margin-top:6px">Units per shift</div>
           </div>
         </div>
 
-<div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+<div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
           <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#F59E0B;margin-bottom:12px">Allowance table — ILO</div>
-          <p style="font-size:12px;line-height:1.6;color:#94A3B8;margin:0 0 14px;text-wrap:pretty">Pick the workstation that matches, then tune if you need to. Constant allowances are always 9%.</p>
+          <p style="font-size:12px;line-height:1.6;color:#bcbbdc;margin:0 0 14px;text-wrap:pretty">Pick the workstation that matches, then tune if you need to. Constant allowances are always 9%.</p>
 
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-bottom:14px">
             <sc-for list="{{ iloPresets }}" as="p" hint-placeholder-count="4">
@@ -2599,25 +2600,25 @@
                   <span style="font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:{{ p.c }}">{{ p.lbl }}</span>
                   <span style="font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#F59E0B">{{ p.tot }}</span>
                 </div>
-                <div style="font-size:10px;line-height:1.45;color:#94A3B8">{{ p.sub }}</div>
+                <div style="font-size:10px;line-height:1.45;color:#bcbbdc">{{ p.sub }}</div>
               </button>
             </sc-for>
           </div>
 
-          <button onClick="{{ toggleIlo }}" style="width:100%;padding:8px 12px;margin-bottom:14px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:500 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-align:left" style-hover="border-color:#D97706;color:#E2E8F0">{{ iloToggleTxt }}</button>
+          <button onClick="{{ toggleIlo }}" style="width:100%;padding:8px 12px;margin-bottom:14px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:500 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-align:left" style-hover="border-color:#D97706;color:#f2f1ff">{{ iloToggleTxt }}</button>
 
           <sc-if value="{{ iloOpen }}">
-          <div style="background:#0B1929;border:1px solid #1E3A5F;border-radius:8px;padding:11px 13px;margin-bottom:14px">
+          <div style="background:#070a1a;border:1px solid #343a7a;border-radius:8px;padding:11px 13px;margin-bottom:14px">
             <div style="display:flex;justify-content:space-between;align-items:baseline;padding:3px 0">
-              <span style="font-size:12px;color:#94A3B8">Personal needs</span>
-              <span style="font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#CBD5E1">5</span>
+              <span style="font-size:12px;color:#bcbbdc">Personal needs</span>
+              <span style="font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#dcdbf2">5</span>
             </div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;padding:3px 0">
-              <span style="font-size:12px;color:#94A3B8">Basic fatigue</span>
-              <span style="font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#CBD5E1">4</span>
+              <span style="font-size:12px;color:#bcbbdc">Basic fatigue</span>
+              <span style="font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#dcdbf2">4</span>
             </div>
-            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0 0;margin-top:5px;border-top:1px solid #1E3A5F">
-              <span style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">CONSTANT</span>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:6px 0 0;margin-top:5px;border-top:1px solid #343a7a">
+              <span style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">CONSTANT</span>
               <span style="font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#F59E0B">9</span>
             </div>
           </div>
@@ -2626,10 +2627,10 @@
             <sc-for list="{{ ilo }}" as="a" hint-placeholder-count="8">
               <div>
                 <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:4px">
-                  <label style="font-size:11px;color:#94A3B8">{{ a.lbl }}</label>
+                  <label style="font-size:11px;color:#bcbbdc">{{ a.lbl }}</label>
                   <span style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:{{ a.valCol }}">+{{ a.val }}</span>
                 </div>
-                <select value="{{ a.val }}" onChange="{{ a.onChange }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:400 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px">
+                <select value="{{ a.val }}" onChange="{{ a.onChange }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:400 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px">
                   <sc-for list="{{ a.opts }}" as="o" hint-placeholder-count="3">
                     <option value="{{ o.v }}">{{ o.t }}</option>
                   </sc-for>
@@ -2639,18 +2640,18 @@
           </div>
           </sc-if>
 
-          <div style="height:1px;background:#1E3A5F;margin:16px 0 12px"></div>
+          <div style="height:1px;background:#343a7a;margin:16px 0 12px"></div>
           <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px">
-            <span style="font-size:12px;color:#94A3B8">Variable fatigue</span>
-            <span style="font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#CBD5E1">{{ iloVar }}</span>
+            <span style="font-size:12px;color:#bcbbdc">Variable fatigue</span>
+            <span style="font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#dcdbf2">{{ iloVar }}</span>
           </div>
           <div style="display:flex;justify-content:space-between;align-items:baseline">
-            <span style="font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#94A3B8">Total allowance</span>
+            <span style="font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#bcbbdc">Total allowance</span>
             <span style="font:500 28px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#F59E0B;line-height:1">{{ iloTotal }}</span>
           </div>
           <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
             <button onClick="{{ applyIlo }}" style="padding:9px 14px;background:#8A4B12;border:1px solid #D97706;color:#FAC775;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#D97706">Apply to calculator</button>
-            <button onClick="{{ resetIlo }}" style="padding:9px 14px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6;color:#E2E8F0">Reset table</button>
+            <button onClick="{{ resetIlo }}" style="padding:9px 14px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6;color:#f2f1ff">Reset table</button>
           </div>
           <sc-if value="{{ iloSnapped }}">
             <p style="font-size:12px;line-height:1.55;color:#FAC775;background:#412402;border:1px solid #D97706;border-radius:8px;padding:10px 12px;margin:12px 0 0">{{ iloSnapTxt }}</p>
@@ -2665,10 +2666,10 @@
     <sc-if value="{{ isTrk }}">
       <div style="display:flex;flex-direction:column;gap:14px">
 
-        <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+        <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
           <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px">
             <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#34D399">Operator performance</div>
-            <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">EFFICIENCY VS STANDARD, BY SHIFT</div>
+            <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">EFFICIENCY VS STANDARD, BY SHIFT</div>
           </div>
 
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px">
@@ -2677,34 +2678,34 @@
             </sc-for>
           </div>
 
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:1px;background:#1E3A5F;border:1px solid #1E3A5F;margin-bottom:18px">
-            <div style="background:#0B1929;padding:12px 14px">
-              <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#94A3B8;margin-bottom:6px">Latest</div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:1px;background:#343a7a;border:1px solid #343a7a;margin-bottom:18px">
+            <div style="background:#070a1a;padding:12px 14px">
+              <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#bcbbdc;margin-bottom:6px">Latest</div>
               <div style="font:500 22px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:{{ trkLatestCol }};line-height:1">{{ trkLatest }}</div>
             </div>
-            <div style="background:#0B1929;padding:12px 14px">
-              <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#94A3B8;margin-bottom:6px">Average</div>
-              <div style="font:500 22px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#CBD5E1;line-height:1">{{ trkAvg }}</div>
+            <div style="background:#070a1a;padding:12px 14px">
+              <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#bcbbdc;margin-bottom:6px">Average</div>
+              <div style="font:500 22px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#dcdbf2;line-height:1">{{ trkAvg }}</div>
             </div>
-            <div style="background:#0B1929;padding:12px 14px">
-              <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#94A3B8;margin-bottom:6px">Best</div>
+            <div style="background:#070a1a;padding:12px 14px">
+              <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#bcbbdc;margin-bottom:6px">Best</div>
               <div style="font:500 22px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#34D399;line-height:1">{{ trkBest }}</div>
             </div>
-            <div style="background:#0B1929;padding:12px 14px">
-              <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#94A3B8;margin-bottom:6px">Trend</div>
+            <div style="background:#070a1a;padding:12px 14px">
+              <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#bcbbdc;margin-bottom:6px">Trend</div>
               <div style="font:500 22px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:{{ trkTrendCol }};line-height:1">{{ trkTrend }}</div>
             </div>
-            <div style="background:#0B1929;padding:12px 14px">
-              <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#94A3B8;margin-bottom:6px">Shifts logged</div>
+            <div style="background:#070a1a;padding:12px 14px">
+              <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#bcbbdc;margin-bottom:6px">Shifts logged</div>
               <div style="font:500 22px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#A78BFA;line-height:1">{{ trkCount }}</div>
             </div>
           </div>
 
           <sc-if value="{{ trkEmpty }}">
-            <p style="font-size:13px;line-height:1.65;color:#94A3B8;margin:0;background:#0B1929;border:1px solid #1E3A5F;border-radius:8px;padding:14px">No shifts logged for this operator yet. Add one below.</p>
+            <p style="font-size:13px;line-height:1.65;color:#bcbbdc;margin:0;background:#070a1a;border:1px solid #343a7a;border-radius:8px;padding:14px">No shifts logged for this operator yet. Add one below.</p>
           </sc-if>
           <sc-if value="{{ trkHas }}" hint-placeholder-val="{{ true }}">
-            <div style="background:#0B1929;border:1px solid #1E3A5F;border-radius:8px;padding:14px">
+            <div style="background:#070a1a;border:1px solid #343a7a;border-radius:8px;padding:14px">
               <div style="position:relative;height:172px;display:flex;align-items:flex-end;gap:6px">
                 <div style="position:absolute;left:0;right:0;bottom:{{ trkLine90 }};height:1px;background:#12352E"></div>
                 <div style="position:absolute;left:0;right:0;bottom:{{ trkLine75 }};height:1px;background:#412402"></div>
@@ -2717,10 +2718,10 @@
               </div>
               <div style="display:flex;gap:6px;margin-top:7px">
                 <sc-for list="{{ trkBars }}" as="b" hint-placeholder-count="6">
-                  <span style="flex:1;text-align:center;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8">{{ b.d }}</span>
+                  <span style="flex:1;text-align:center;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc">{{ b.d }}</span>
                 </sc-for>
               </div>
-              <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;color:#94A3B8">
+              <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;color:#bcbbdc">
                 <span style="display:flex;align-items:center;gap:5px"><span style="width:9px;height:1px;background:#12352E;display:block"></span>90% EXCELLENT</span>
                 <span style="display:flex;align-items:center;gap:5px"><span style="width:9px;height:1px;background:#412402;display:block"></span>75% TARGET FLOOR</span>
                 <span>SCALE 0–110%</span>
@@ -2730,62 +2731,62 @@
         </div>
 
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:14px;align-items:start">
-          <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+          <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
             <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#34D399;margin-bottom:14px">Log a shift</div>
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:10px">
               <div style="grid-column:1/-1">
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Operator</label>
-                <input type="text" value="{{ lgName }}" onChange="{{ onLgName }}" placeholder="Name" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#34D399">
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Operator</label>
+                <input type="text" value="{{ lgName }}" onChange="{{ onLgName }}" placeholder="Name" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#34D399">
               </div>
               <div>
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Date label</label>
-                <input type="text" value="{{ lgDate }}" onChange="{{ onLgDate }}" placeholder="22 Aug" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#34D399">
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Date label</label>
+                <input type="text" value="{{ lgDate }}" onChange="{{ onLgDate }}" placeholder="22 Aug" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#34D399">
               </div>
               <div>
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Units</label>
-                <input type="number" value="{{ lgU }}" placeholder="units this shift" onChange="{{ onLgU }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#34D399">
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Units</label>
+                <input type="number" value="{{ lgU }}" placeholder="units this shift" onChange="{{ onLgU }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#34D399">
               </div>
               <div>
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">SMV</label>
-                <input type="number" step="0.001" value="{{ lgS }}" placeholder="min per unit" onChange="{{ onLgS }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#34D399">
-                <button onClick="{{ useStudySmv }}" style="width:100%;margin-top:5px;padding:5px 8px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em" style-hover="border-color:#34D399;color:#E2E8F0">{{ studySmvBtnTxt }}</button>
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">SMV</label>
+                <input type="number" step="0.001" value="{{ lgS }}" placeholder="min per unit" onChange="{{ onLgS }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#34D399">
+                <button onClick="{{ useStudySmv }}" style="width:100%;margin-top:5px;padding:5px 8px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em" style-hover="border-color:#34D399;color:#f2f1ff">{{ studySmvBtnTxt }}</button>
               </div>
               <div>
-                <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">Minutes worked</label>
-                <input type="number" value="{{ lgT }}" onChange="{{ onLgT }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#34D399">
+                <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">Minutes worked</label>
+                <input type="number" value="{{ lgT }}" onChange="{{ onLgT }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:8px 10px;outline:none;border-radius:8px" style-focus="border-color:#34D399">
               </div>
             </div>
-            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;padding-top:12px;border-top:1px solid #1E3A5F">
-              <span style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#94A3B8">Computed efficiency</span>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;padding-top:12px;border-top:1px solid #343a7a">
+              <span style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#bcbbdc">Computed efficiency</span>
               <span style="font:500 22px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:{{ lgEffCol }}">{{ lgEff }}</span>
             </div>
             <sc-if value="{{ lgWarn }}">
               <p style="font-size:12px;line-height:1.55;color:#FAC775;background:#412402;border:1px solid #D97706;border-radius:8px;padding:10px 12px;margin:12px 0 0">{{ lgWarnTxt }}</p>
             </sc-if>
             <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
-              <button onClick="{{ addLog }}" style="padding:9px 14px;background:#12352E;border:1px solid #2E9E86;color:#E2E8F0;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E9E86">Add to log</button>
-              <button onClick="{{ csvOps }}" style="padding:9px 14px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#34D399;color:#E2E8F0">Export log CSV</button>
+              <button onClick="{{ addLog }}" style="padding:9px 14px;background:#12352E;border:1px solid #2E9E86;color:#f2f1ff;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E9E86">Add to log</button>
+              <button onClick="{{ csvOps }}" style="padding:9px 14px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#34D399;color:#f2f1ff">Export log CSV</button>
             </div>
             <sc-if value="{{ logged }}">
               <p style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#2E9E86;margin:10px 0 0">SHIFT ADDED</p>
             </sc-if>
           </div>
 
-          <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+          <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
             <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#A78BFA;margin-bottom:14px">Shift records — {{ trkName }}</div>
-            <div style="display:grid;grid-template-columns:1fr 66px 74px 74px 28px;gap:8px;padding-bottom:7px;border-bottom:1px solid #1E3A5F;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">
+            <div style="display:grid;grid-template-columns:1fr 66px 74px 74px 28px;gap:8px;padding-bottom:7px;border-bottom:1px solid #343a7a;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">
               <span>DATE</span><span style="text-align:right">UNITS</span><span style="text-align:right">MIN</span><span style="text-align:right">EFF</span><span></span>
             </div>
             <sc-if value="{{ trkEmpty }}">
-              <p style="font-size:12px;line-height:1.6;color:#94A3B8;margin:12px 0 0">Nothing logged yet.</p>
+              <p style="font-size:12px;line-height:1.6;color:#bcbbdc;margin:12px 0 0">Nothing logged yet.</p>
             </sc-if>
             <sc-for list="{{ trkRows }}" as="r" hint-placeholder-count="6">
-              <div style="display:grid;grid-template-columns:1fr 66px 74px 74px 28px;gap:8px;align-items:center;padding:8px 0;border-bottom:1px solid #1E3A5F">
-                <span style="font:400 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#CBD5E1">{{ r.d }}</span>
-                <span style="text-align:right;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8">{{ r.u }}</span>
-                <span style="text-align:right;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8">{{ r.t }}</span>
+              <div style="display:grid;grid-template-columns:1fr 66px 74px 74px 28px;gap:8px;align-items:center;padding:8px 0;border-bottom:1px solid #343a7a">
+                <span style="font:400 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#dcdbf2">{{ r.d }}</span>
+                <span style="text-align:right;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc">{{ r.u }}</span>
+                <span style="text-align:right;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc">{{ r.t }}</span>
                 <span style="text-align:right;font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:{{ r.c }}">{{ r.e }}</span>
-                <button onClick="{{ r.remove }}" style="width:22px;height:22px;padding:0;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif" style-hover="border-color:#EF4444;color:#F0997B">×</button>
+                <button onClick="{{ r.remove }}" style="width:22px;height:22px;padding:0;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif" style-hover="border-color:#EF4444;color:#F0997B">×</button>
               </div>
             </sc-for>
           </div>
@@ -2796,105 +2797,105 @@
     <sc-if value="{{ isPrac }}">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px;align-items:start">
 
-        <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+        <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
           <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#A78BFA;margin-bottom:14px">Formula reference</div>
-          <p style="font-size:12px;line-height:1.6;color:#94A3B8;margin:0 0 14px">Each formula with what it is for and a worked example using the dashboard's default figures.</p>
+          <p style="font-size:12px;line-height:1.6;color:#bcbbdc;margin:0 0 14px">Each formula with what it is for and a worked example using the dashboard's default figures.</p>
           <div style="display:flex;flex-direction:column;gap:10px">
 
-            <div style="background:#0B1929;border-left:2px solid #A78BFA;padding:13px 15px">
+            <div style="background:#070a1a;border-left:2px solid #A78BFA;padding:13px 15px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:9px">
                 <span style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#A78BFA">Basic time</span>
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">STEP 1</span>
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">STEP 1</span>
               </div>
-              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:9px">BT = OT × (R ÷ base)</div>
-              <p style="font-size:12px;line-height:1.65;color:#CBD5E1;margin:0 0 9px;text-wrap:pretty">Corrects the stopwatch reading for how fast the worker was actually going. A rating above the base means they beat standard pace, so the basic time is longer than what you timed.</p>
-              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8;margin-bottom:9px">OT = observed time · R = rating · base = 100 or 75 depending on the scale in use</div>
-              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #1E3A5F;padding-top:9px">
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8;flex-shrink:0">E.G.</span>
+              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:9px">BT = OT × (R ÷ base)</div>
+              <p style="font-size:12px;line-height:1.65;color:#dcdbf2;margin:0 0 9px;text-wrap:pretty">Corrects the stopwatch reading for how fast the worker was actually going. A rating above the base means they beat standard pace, so the basic time is longer than what you timed.</p>
+              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc;margin-bottom:9px">OT = observed time · R = rating · base = 100 or 75 depending on the scale in use</div>
+              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #343a7a;padding-top:9px">
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc;flex-shrink:0">E.G.</span>
                 <span style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#A78BFA">2.500 × (110 ÷ 100) = 2.750 min</span>
               </div>
             </div>
 
-            <div style="background:#0B1929;border-left:2px solid #A78BFA;padding:13px 15px">
+            <div style="background:#070a1a;border-left:2px solid #A78BFA;padding:13px 15px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:9px">
                 <span style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#A78BFA">Standard minute value</span>
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">STEP 2</span>
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">STEP 2</span>
               </div>
-              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:9px">SMV = BT × (1 + A ÷ 100)</div>
-              <p style="font-size:12px;line-height:1.65;color:#CBD5E1;margin:0 0 9px;text-wrap:pretty">Adds the paid time a worker cannot spend producing — rest, personal needs, unavoidable delay — so the standard is achievable across a full shift rather than for one perfect cycle.</p>
-              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8;margin-bottom:9px">BT = basic time · A = allowance % from the ILO table</div>
-              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #1E3A5F;padding-top:9px">
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8;flex-shrink:0">E.G.</span>
+              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:9px">SMV = BT × (1 + A ÷ 100)</div>
+              <p style="font-size:12px;line-height:1.65;color:#dcdbf2;margin:0 0 9px;text-wrap:pretty">Adds the paid time a worker cannot spend producing — rest, personal needs, unavoidable delay — so the standard is achievable across a full shift rather than for one perfect cycle.</p>
+              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc;margin-bottom:9px">BT = basic time · A = allowance % from the ILO table</div>
+              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #343a7a;padding-top:9px">
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc;flex-shrink:0">E.G.</span>
                 <span style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#A78BFA">2.750 × (1 + 15 ÷ 100) = 3.163 min</span>
               </div>
             </div>
 
-            <div style="background:#0B1929;border-left:2px solid #A78BFA;padding:13px 15px">
+            <div style="background:#070a1a;border-left:2px solid #A78BFA;padding:13px 15px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:9px">
                 <span style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#A78BFA">Product SMV</span>
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">MULTI-ELEMENT</span>
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">MULTI-ELEMENT</span>
               </div>
-              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:9px">SMV = Σ (x̄ᵢ × Rᵢ ÷ base) × (1 + A ÷ 100)</div>
-              <p style="font-size:12px;line-height:1.65;color:#CBD5E1;margin:0 0 9px;text-wrap:pretty">Each element is rated on its own — a worker can be fast at one and slow at another — then the basic times add up before the allowance is applied once to the whole product.</p>
-              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8;margin-bottom:9px">x̄ᵢ = element mean · Rᵢ = element rating</div>
-              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #1E3A5F;padding-top:9px">
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8;flex-shrink:0">E.G.</span>
+              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:9px">SMV = Σ (x̄ᵢ × Rᵢ ÷ base) × (1 + A ÷ 100)</div>
+              <p style="font-size:12px;line-height:1.65;color:#dcdbf2;margin:0 0 9px;text-wrap:pretty">Each element is rated on its own — a worker can be fast at one and slow at another — then the basic times add up before the allowance is applied once to the whole product.</p>
+              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc;margin-bottom:9px">x̄ᵢ = element mean · Rᵢ = element rating</div>
+              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #343a7a;padding-top:9px">
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc;flex-shrink:0">E.G.</span>
                 <span style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#A78BFA">(2.608 + 1.220 + 4.591) × 1.15 = 9.682 min</span>
               </div>
             </div>
 
-            <div style="background:#0B1929;border-left:2px solid #A78BFA;padding:13px 15px">
+            <div style="background:#070a1a;border-left:2px solid #A78BFA;padding:13px 15px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:9px">
                 <span style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#A78BFA">Line efficiency</span>
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">KPI</span>
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">KPI</span>
               </div>
-              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:9px">E% = (SMV × U) ÷ (T × W) × 100</div>
-              <p style="font-size:12px;line-height:1.65;color:#CBD5E1;margin:0 0 9px;text-wrap:pretty">Compares the standard minutes the line earned against the minutes it was paid for. 100% means output matched exactly what the SMV says it should be; most lines run 75–85%.</p>
-              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8;margin-bottom:9px">U = units · T = shift time (min) · W = workers</div>
-              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #1E3A5F;padding-top:9px">
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8;flex-shrink:0">E.G.</span>
+              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:9px">E% = (SMV × U) ÷ (T × W) × 100</div>
+              <p style="font-size:12px;line-height:1.65;color:#dcdbf2;margin:0 0 9px;text-wrap:pretty">Compares the standard minutes the line earned against the minutes it was paid for. 100% means output matched exactly what the SMV says it should be; most lines run 75–85%.</p>
+              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc;margin-bottom:9px">U = units · T = shift time (min) · W = workers</div>
+              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #343a7a;padding-top:9px">
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc;flex-shrink:0">E.G.</span>
                 <span style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#A78BFA">(3.163 × 1500) ÷ (480 × 12) × 100 = 82.4%</span>
               </div>
             </div>
 
-            <div style="background:#0B1929;border-left:2px solid #A78BFA;padding:13px 15px">
+            <div style="background:#070a1a;border-left:2px solid #A78BFA;padding:13px 15px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:9px">
                 <span style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#A78BFA">Production target</span>
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">TARGET</span>
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">TARGET</span>
               </div>
-              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:9px">Target = (T × W × E) ÷ SMV</div>
-              <p style="font-size:12px;line-height:1.65;color:#CBD5E1;margin:0 0 9px;text-wrap:pretty">Turns the SMV into a shift goal. Setting E below 100% builds in the efficiency the line realistically holds, so the target is one the operators can actually hit.</p>
-              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8;margin-bottom:9px">E = target efficiency as a decimal · T = shift time (min) · W = workers</div>
-              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #1E3A5F;padding-top:9px">
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8;flex-shrink:0">E.G.</span>
+              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:9px">Target = (T × W × E) ÷ SMV</div>
+              <p style="font-size:12px;line-height:1.65;color:#dcdbf2;margin:0 0 9px;text-wrap:pretty">Turns the SMV into a shift goal. Setting E below 100% builds in the efficiency the line realistically holds, so the target is one the operators can actually hit.</p>
+              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc;margin-bottom:9px">E = target efficiency as a decimal · T = shift time (min) · W = workers</div>
+              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #343a7a;padding-top:9px">
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc;flex-shrink:0">E.G.</span>
                 <span style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#A78BFA">(480 × 12 × 0.85) ÷ 3.163 = 1548 units</span>
               </div>
             </div>
 
-            <div style="background:#0B1929;border-left:2px solid #A78BFA;padding:13px 15px">
+            <div style="background:#070a1a;border-left:2px solid #A78BFA;padding:13px 15px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:9px">
                 <span style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#A78BFA">Required observations</span>
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">STUDY SIZE</span>
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">STUDY SIZE</span>
               </div>
-              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:9px">n = (Z × s ÷ (e × x̄))²</div>
-              <p style="font-size:12px;line-height:1.65;color:#CBD5E1;margin:0 0 9px;text-wrap:pretty">Tells you when it is safe to stop timing. The more the readings scatter, the more of them you need before the mean can be trusted to the accuracy you claimed.</p>
-              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8;margin-bottom:9px">Z = 1.645 (90%) or 1.96 (95%) · s = std deviation · e = accuracy as a decimal · x̄ = mean</div>
-              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #1E3A5F;padding-top:9px">
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8;flex-shrink:0">E.G.</span>
+              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:9px">n = (Z × s ÷ (e × x̄))²</div>
+              <p style="font-size:12px;line-height:1.65;color:#dcdbf2;margin:0 0 9px;text-wrap:pretty">Tells you when it is safe to stop timing. The more the readings scatter, the more of them you need before the mean can be trusted to the accuracy you claimed.</p>
+              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc;margin-bottom:9px">Z = 1.645 (90%) or 1.96 (95%) · s = std deviation · e = accuracy as a decimal · x̄ = mean</div>
+              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #343a7a;padding-top:9px">
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc;flex-shrink:0">E.G.</span>
                 <span style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#A78BFA">(1.645 × 0.121 ÷ (0.05 × 2.484))² = 3 readings</span>
               </div>
             </div>
 
-            <div style="background:#0B1929;border-left:2px solid #F0997B;padding:13px 15px">
+            <div style="background:#070a1a;border-left:2px solid #F0997B;padding:13px 15px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:9px">
                 <span style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#F0997B">MOST standard time</span>
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8">ALT METHOD</span>
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">ALT METHOD</span>
               </div>
-              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;margin-bottom:9px">TMU = index total × 10</div>
-              <p style="font-size:12px;line-height:1.65;color:#CBD5E1;margin:0 0 9px;text-wrap:pretty">Builds the time from the movements themselves, so there is nothing to rate and no stopwatch needed. The result is already basic time at standard pace — add your allowance to reach an SMV.</p>
-              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8;margin-bottom:9px">1 TMU = 0.036 sec · index total = sum of the sequence values for the model in use</div>
-              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #1E3A5F;padding-top:9px">
-                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#94A3B8;flex-shrink:0">E.G.</span>
+              <div style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;margin-bottom:9px">TMU = index total × 10</div>
+              <p style="font-size:12px;line-height:1.65;color:#dcdbf2;margin:0 0 9px;text-wrap:pretty">Builds the time from the movements themselves, so there is nothing to rate and no stopwatch needed. The result is already basic time at standard pace — add your allowance to reach an SMV.</p>
+              <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc;margin-bottom:9px">1 TMU = 0.036 sec · index total = sum of the sequence values for the model in use</div>
+              <div style="display:flex;gap:9px;align-items:baseline;border-top:1px solid #343a7a;padding-top:9px">
+                <span style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc;flex-shrink:0">E.G.</span>
                 <span style="font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#F0997B">index 6 → 60 TMU × 0.036 = 2.16 sec</span>
               </div>
             </div>
@@ -2903,25 +2904,25 @@
         </div>
 
         <div style="display:flex;flex-direction:column;gap:14px">
-          <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+          <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
             <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#34D399;margin-bottom:14px">Practice problems</div>
             <sc-if value="{{ noProb }}" hint-placeholder-val="{{ true }}">
-              <p style="font-size:13px;line-height:1.65;color:#94A3B8;margin:0;background:#0B1929;border:1px solid #1E3A5F;border-radius:8px;padding:14px">Tap “New problem” to begin. Problems rotate across SMV, efficiency, targets, MOST, and time study statistics.</p>
+              <p style="font-size:13px;line-height:1.65;color:#bcbbdc;margin:0;background:#070a1a;border:1px solid #343a7a;border-radius:8px;padding:14px">Tap “New problem” to begin. Problems rotate across SMV, efficiency, targets, MOST, and time study statistics.</p>
             </sc-if>
             <sc-if value="{{ hasProb }}">
-              <div style="background:#0B1929;border:1px solid #1E3A5F;border-radius:8px;padding:14px">
+              <div style="background:#070a1a;border:1px solid #343a7a;border-radius:8px;padding:14px">
                 <sc-for list="{{ probGiven }}" as="g" hint-placeholder-count="3">
-                  <div style="display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px solid #1E3A5F">
-                    <span style="font-size:12px;color:#94A3B8">{{ g.k }}</span>
-                    <span style="font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;text-align:right">{{ g.v }}</span>
+                  <div style="display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px solid #343a7a">
+                    <span style="font-size:12px;color:#bcbbdc">{{ g.k }}</span>
+                    <span style="font:500 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;text-align:right">{{ g.v }}</span>
                   </div>
                 </sc-for>
-                <p style="font-size:13px;line-height:1.6;color:#E2E8F0;margin:12px 0 0">{{ probAsk }}</p>
+                <p style="font-size:13px;line-height:1.6;color:#f2f1ff;margin:12px 0 0">{{ probAsk }}</p>
               </div>
             </sc-if>
             <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
-              <button onClick="{{ newProb }}" style="padding:9px 14px;background:#1D4E89;border:1px solid #2E75B6;color:#E2E8F0;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">New problem</button>
-              <button onClick="{{ showAns }}" style="padding:9px 14px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6;color:#E2E8F0">Show answer</button>
+              <button onClick="{{ newProb }}" style="padding:9px 14px;background:#1D4E89;border:1px solid #2E75B6;color:#f2f1ff;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">New problem</button>
+              <button onClick="{{ showAns }}" style="padding:9px 14px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6;color:#f2f1ff">Show answer</button>
             </div>
             <sc-if value="{{ ansOpen }}">
               <div style="background:#12352E;border:1px solid #2E9E86;padding:13px;margin-top:12px;display:flex;flex-direction:column;gap:6px">
@@ -2932,22 +2933,22 @@
             </sc-if>
           </div>
 
-          <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+          <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
             <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#F59E0B;margin-bottom:14px">Rating calibration</div>
-            <p style="font-size:12px;line-height:1.6;color:#94A3B8;margin:0 0 14px">Read the scenario and estimate the observer rating. Standard pace is {{ scaleTxt }} on the scale in use. Professional tolerance is ±5 points at base 100.</p>
+            <p style="font-size:12px;line-height:1.6;color:#bcbbdc;margin:0 0 14px">Read the scenario and estimate the observer rating. Standard pace is {{ scaleTxt }} on the scale in use. Professional tolerance is ±5 points at base 100.</p>
             <sc-if value="{{ noScen }}" hint-placeholder-val="{{ true }}">
-              <p style="font-size:13px;line-height:1.65;color:#94A3B8;margin:0;background:#0B1929;border:1px solid #1E3A5F;border-radius:8px;padding:14px">Tap “New scenario” to begin. Practise until you consistently rate within tolerance.</p>
+              <p style="font-size:13px;line-height:1.65;color:#bcbbdc;margin:0;background:#070a1a;border:1px solid #343a7a;border-radius:8px;padding:14px">Tap “New scenario” to begin. Practise until you consistently rate within tolerance.</p>
             </sc-if>
             <sc-if value="{{ hasScen }}">
-              <p style="font-size:13px;line-height:1.7;color:#E2E8F0;margin:0;background:#0B1929;border:1px solid #1E3A5F;border-radius:8px;padding:14px;text-wrap:pretty">{{ scenTxt }}</p>
+              <p style="font-size:13px;line-height:1.7;color:#f2f1ff;margin:0;background:#070a1a;border:1px solid #343a7a;border-radius:8px;padding:14px;text-wrap:pretty">{{ scenTxt }}</p>
             </sc-if>
             <div style="margin-top:16px">
               <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px">
-                <label style="font-size:11px;letter-spacing:.06em;color:#94A3B8">Your rating</label>
+                <label style="font-size:11px;letter-spacing:.06em;color:#bcbbdc">Your rating</label>
                 <span style="font:500 17px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6">{{ cal }}</span>
               </div>
               <input type="range" min="{{ rMin }}" max="{{ rMax }}" step="1" value="{{ cal }}" onChange="{{ onCal }}" style="margin-bottom:6px">
-              <div style="display:flex;justify-content:space-between;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8">
+              <div style="display:flex;justify-content:space-between;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc">
                 <sc-for list="{{ rTicks }}" as="tk" hint-placeholder-count="5">
                   <span>{{ tk.v }}</span>
                 </sc-for>
@@ -2957,19 +2958,19 @@
               <p style="font-size:12px;line-height:1.55;color:#FAC775;background:#412402;border:1px solid #D97706;border-radius:8px;padding:10px 12px;margin:12px 0 0">{{ lgWarnTxt }}</p>
             </sc-if>
             <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
-              <button onClick="{{ newScen }}" style="padding:9px 14px;background:#1D4E89;border:1px solid #2E75B6;color:#E2E8F0;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">New scenario</button>
-              <button onClick="{{ checkRating }}" style="padding:9px 14px;background:transparent;border:1px solid #2E4A6F;color:#94A3B8;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6;color:#E2E8F0">Check my rating</button>
+              <button onClick="{{ newScen }}" style="padding:9px 14px;background:#1D4E89;border:1px solid #2E75B6;color:#f2f1ff;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">New scenario</button>
+              <button onClick="{{ checkRating }}" style="padding:9px 14px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6;color:#f2f1ff">Check my rating</button>
             </div>
             <sc-if value="{{ checked }}">
               <div style="margin-top:14px">
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#1E3A5F;border:1px solid #1E3A5F;margin-bottom:10px">
-                  <div style="background:#0B1929;padding:12px 14px">
-                    <div style="font:500 24px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;line-height:1">{{ yourR }}</div>
-                    <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#94A3B8;margin-top:5px">Your rating</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#343a7a;border:1px solid #343a7a;margin-bottom:10px">
+                  <div style="background:#070a1a;padding:12px 14px">
+                    <div style="font:500 24px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;line-height:1">{{ yourR }}</div>
+                    <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#bcbbdc;margin-top:5px">Your rating</div>
                   </div>
-                  <div style="background:#0B1929;padding:12px 14px">
+                  <div style="background:#070a1a;padding:12px 14px">
                     <div style="font:500 24px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#64B5F6;line-height:1">{{ corrR }}</div>
-                    <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#94A3B8;margin-top:5px">Correct rating</div>
+                    <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#bcbbdc;margin-top:5px">Correct rating</div>
                   </div>
                 </div>
                 <sc-if value="{{ calGood }}">
@@ -2981,31 +2982,31 @@
                 <sc-if value="{{ calBad }}">
                   <div style="background:#4A1B0C;border:1px solid #8A2E12;color:#F0997B;padding:11px 13px;font-size:13px;line-height:1.6">{{ calMsg }}</div>
                 </sc-if>
-                <p style="font-size:13px;line-height:1.65;color:#94A3B8;margin:10px 0 0">{{ calExp }}</p>
+                <p style="font-size:13px;line-height:1.65;color:#bcbbdc;margin:10px 0 0">{{ calExp }}</p>
               </div>
             </sc-if>
           </div>
         </div>
         <div style="grid-column:1/-1">
           <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#F0997B;margin-bottom:6px">MOST — an alternative to timing</div>
-          <p style="font-size:12px;line-height:1.6;color:#94A3B8;margin:0 0 14px;max-width:70ch">Builds the time from the movements themselves instead of a stopwatch, so there is nothing to rate. Useful when you cannot observe the job, or to check a study you have already run.</p>
+          <p style="font-size:12px;line-height:1.6;color:#bcbbdc;margin:0 0 14px;max-width:70ch">Builds the time from the movements themselves instead of a stopwatch, so there is nothing to rate. Useful when you cannot observe the job, or to check a study you have already run.</p>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:14px;align-items:start">
-            <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+            <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
               <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#F0997B;margin-bottom:12px">BasicMOST sequence models</div>
               <div style="display:flex;gap:2px;margin-bottom:14px;flex-wrap:wrap">
-                <button onClick="{{ mmGm }}" style="flex:1;min-width:104px;padding:8px 10px;background:{{ mmGmB }};border:1px solid #2E4A6F;color:{{ mmGmC }};cursor:pointer;font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase">General move</button>
-                <button onClick="{{ mmCm }}" style="flex:1;min-width:104px;padding:8px 10px;background:{{ mmCmB }};border:1px solid #2E4A6F;color:{{ mmCmC }};cursor:pointer;font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase">Controlled move</button>
-                <button onClick="{{ mmTu }}" style="flex:1;min-width:104px;padding:8px 10px;background:{{ mmTuB }};border:1px solid #2E4A6F;color:{{ mmTuC }};cursor:pointer;font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase">Tool use</button>
+                <button onClick="{{ mmGm }}" style="flex:1;min-width:104px;padding:8px 10px;background:{{ mmGmB }};border:1px solid #454b92;color:{{ mmGmC }};cursor:pointer;font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase">General move</button>
+                <button onClick="{{ mmCm }}" style="flex:1;min-width:104px;padding:8px 10px;background:{{ mmCmB }};border:1px solid #454b92;color:{{ mmCmC }};cursor:pointer;font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase">Controlled move</button>
+                <button onClick="{{ mmTu }}" style="flex:1;min-width:104px;padding:8px 10px;background:{{ mmTuB }};border:1px solid #454b92;color:{{ mmTuC }};cursor:pointer;font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase">Tool use</button>
               </div>
-              <p style="font-size:12px;line-height:1.6;color:#94A3B8;margin:0 0 14px;text-wrap:pretty">{{ mmDesc }}</p>
-              <div style="background:#0B1929;border:1px solid #1E3A5F;border-radius:8px;padding:10px 12px;margin-bottom:16px">
-                <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;color:#94A3B8;margin-bottom:5px">SEQUENCE</div>
-                <div style="font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0;letter-spacing:.18em">{{ mmSeq }}</div>
+              <p style="font-size:12px;line-height:1.6;color:#bcbbdc;margin:0 0 14px;text-wrap:pretty">{{ mmDesc }}</p>
+              <div style="background:#070a1a;border:1px solid #343a7a;border-radius:8px;padding:10px 12px;margin-bottom:16px">
+                <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.14em;color:#bcbbdc;margin-bottom:5px">SEQUENCE</div>
+                <div style="font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff;letter-spacing:.18em">{{ mmSeq }}</div>
               </div>
               <div style="display:flex;flex-wrap:wrap;gap:3px;margin-bottom:18px">
                 <sc-for list="{{ mostSeq }}" as="m" hint-placeholder-count="7">
-                  <div style="flex:1;min-width:44px;background:#0B1929;border:1px solid #1E3A5F;border-radius:8px;padding:7px 2px;text-align:center">
-                    <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#94A3B8">{{ m.k }}</div>
+                  <div style="flex:1;min-width:44px;background:#070a1a;border:1px solid #343a7a;border-radius:8px;padding:7px 2px;text-align:center">
+                    <div style="font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc">{{ m.k }}</div>
                     <div style="font:500 15px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#F0997B;margin-top:2px">{{ m.v }}</div>
                   </div>
                 </sc-for>
@@ -3013,8 +3014,8 @@
               <div style="display:flex;flex-direction:column;gap:12px">
                 <sc-for list="{{ mostParams }}" as="p" hint-placeholder-count="7">
                   <div>
-                    <label style="display:block;font-size:11px;color:#94A3B8;margin-bottom:5px">{{ p.lbl }}</label>
-                    <select value="{{ p.val }}" onChange="{{ p.onChange }}" style="width:100%;background:#0B1929;border:1px solid #2E4A6F;color:#E2E8F0;font:400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:9px 10px;outline:none;border-radius:8px">
+                    <label style="display:block;font-size:11px;color:#bcbbdc;margin-bottom:5px">{{ p.lbl }}</label>
+                    <select value="{{ p.val }}" onChange="{{ p.onChange }}" style="width:100%;background:#070a1a;border:1px solid #454b92;color:#f2f1ff;font:400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding:9px 10px;outline:none;border-radius:8px">
                       <sc-for list="{{ p.opts }}" as="o" hint-placeholder-count="4">
                         <option value="{{ o.v }}">{{ o.t }}</option>
                       </sc-for>
@@ -3025,36 +3026,36 @@
             </div>
 
             <div style="display:flex;flex-direction:column;gap:14px">
-              <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+              <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
                 <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#F0997B;margin-bottom:14px">Output</div>
-                <div style="display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font-size:12px;color:#94A3B8">Total index</span><span style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">{{ mIdx }}</span>
+                <div style="display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font-size:12px;color:#bcbbdc">Total index</span><span style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">{{ mIdx }}</span>
                 </div>
-                <div style="display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font-size:12px;color:#94A3B8">TMU</span><span style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">{{ mTMU }}</span>
+                <div style="display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font-size:12px;color:#bcbbdc">TMU</span><span style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">{{ mTMU }}</span>
                 </div>
-                <div style="display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid #1E3A5F">
-                  <span style="font-size:12px;color:#94A3B8">In minutes</span><span style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#E2E8F0">{{ mMin }}</span>
+                <div style="display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid #343a7a">
+                  <span style="font-size:12px;color:#bcbbdc">In minutes</span><span style="font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#f2f1ff">{{ mMin }}</span>
                 </div>
                 <div style="display:flex;justify-content:space-between;align-items:baseline;padding:14px 0 0">
-                  <span style="font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#94A3B8">Standard time</span>
+                  <span style="font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#bcbbdc">Standard time</span>
                   <span style="font:500 26px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#F0997B">{{ mSec }}</span>
                 </div>
                 <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
-                  <button onClick="{{ sendMost }}" style="padding:9px 14px;background:#1D4E89;border:1px solid #2E75B6;color:#E2E8F0;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">Send to calculator</button>
+                  <button onClick="{{ sendMost }}" style="padding:9px 14px;background:#1D4E89;border:1px solid #2E75B6;color:#f2f1ff;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#2E75B6">Send to calculator</button>
                 </div>
-                <div style="border:1px solid #2E75B6;background:#1E3A5F;padding:12px 14px;margin-top:16px;font-size:12px;line-height:1.6;color:#CBD5E1">MOST output is basic time at standard pace — there is nothing to rate. Add your allowance in the calculator to reach an SMV.</div>
+                <div style="border:1px solid #2E75B6;background:#343a7a;padding:12px 14px;margin-top:16px;font-size:12px;line-height:1.6;color:#dcdbf2">MOST output is basic time at standard pace — there is nothing to rate. Add your allowance in the calculator to reach an SMV.</div>
               </div>
 
-              <div style="background:#112240;border:1px solid #1E3A5F;border-radius:12px;padding:18px">
+              <div style="background:#12143a;border:1px solid #343a7a;border-radius:12px;padding:18px">
                 <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#F0997B;margin-bottom:14px">Worked examples</div>
                 <div style="display:flex;gap:8px;flex-wrap:wrap">
                   <sc-for list="{{ mostExamples }}" as="x" hint-placeholder-count="3">
-                    <button onClick="{{ x.apply }}" style="padding:9px 13px;background:transparent;border:1px solid #2E4A6F;color:#CBD5E1;cursor:pointer;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.06em" style-hover="border-color:#F0997B">{{ x.lbl }}</button>
+                    <button onClick="{{ x.apply }}" style="padding:9px 13px;background:transparent;border:1px solid #454b92;color:#dcdbf2;cursor:pointer;font:500 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.06em" style-hover="border-color:#F0997B">{{ x.lbl }}</button>
                   </sc-for>
                 </div>
                 <sc-if value="{{ hasExD }}">
-                  <p style="font-size:12px;line-height:1.6;color:#94A3B8;margin:12px 0 0">{{ exD }}</p>
+                  <p style="font-size:12px;line-height:1.6;color:#bcbbdc;margin:12px 0 0">{{ exD }}</p>
                 </sc-if>
               </div>
             </div>
@@ -3068,8 +3069,8 @@
 
 <template id="__bundler_thumbnail">
   <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-    <rect width="120" height="120" fill="#0B1929"></rect>
-    <rect x="36" y="36" width="48" height="48" rx="8" fill="#112240" stroke="#2E75B6" stroke-width="2"></rect>
+    <rect width="120" height="120" fill="#070a1a"></rect>
+    <rect x="36" y="36" width="48" height="48" rx="8" fill="#12143a" stroke="#2E75B6" stroke-width="2"></rect>
     <text x="60" y="66" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="600" fill="#64B5F6">SMV</text>
   </svg>
 </template>
@@ -3315,7 +3316,7 @@ class Component extends DCLogic {
         out['b' + i] = { x: i * 22 + 3, y: +yy.toFixed(2), h: +(BOT - yy).toFixed(2),
           f: Math.abs(rd.v - t.mean) > 2 * t.sd ? '#EF4444' : '#2E75B6' };
       } else {
-        out['b' + i] = { x: i * 22 + 3, y: BOT - 1, h: 1, f: '#1E3A5F' };
+        out['b' + i] = { x: i * 22 + 3, y: BOT - 1, h: 1, f: '#343a7a' };
       }
     }
     out.meanY = +y(t.mean).toFixed(2);
@@ -3450,10 +3451,10 @@ class Component extends DCLogic {
   // ---- render ---------------------------------------------------------
   renderVals() {
     const s = this.state, b = this.base(), dash = '—';
-    const on = '#64B5F6', off = '#94A3B8', clear = 'transparent';
+    const on = '#64B5F6', off = '#bcbbdc', clear = 'transparent';
     const tb = a => a
-      ? { bg: '#112240', sh: 'inset 0 3px 7px rgba(0,0,0,.8), inset 0 -1px 0 rgba(69,200,216,.35)', t: 'translateY(3px)' }
-      : { bg: 'linear-gradient(180deg,#112240 0%,#0B1929 100%)', sh: 'inset 0 1px 0 rgba(255,255,255,.07), 0 3px 0 #0B1929, 0 5px 9px rgba(0,0,0,.45)', t: 'none' };
+      ? { bg: '#12143a', sh: 'inset 0 3px 7px rgba(0,0,0,.8), inset 0 -1px 0 rgba(69,200,216,.35)', t: 'translateY(3px)' }
+      : { bg: 'linear-gradient(180deg,#12143a 0%,#070a1a 100%)', sh: 'inset 0 1px 0 rgba(255,255,255,.07), 0 3px 0 #070a1a, 0 5px 9px rgba(0,0,0,.45)', t: 'none' };
     const effCol = p => p >= 90 ? '#34D399' : p >= 75 ? '#F59E0B' : '#EF4444';
 
     // SMV calculator
@@ -3469,7 +3470,7 @@ class Component extends DCLogic {
     const iloTotal = iloVar + 9;
     const ilo = this.iloSpec.map(sp => ({
       lbl: sp[1], val: this.n(s.ilo[sp[0]]),
-      valCol: this.n(s.ilo[sp[0]]) > 0 ? '#F59E0B' : '#94A3B8',
+      valCol: this.n(s.ilo[sp[0]]) > 0 ? '#F59E0B' : '#bcbbdc',
       opts: sp[2].map(o => ({ v: o[0], t: '+' + o[0] + ' · ' + o[1] })),
       onChange: e => this.setState({ ilo: Object.assign({}, this.state.ilo, { [sp[0]]: parseInt(e.target.value, 10) }), iloApplied: false, iloSnapped: false })
     }));
@@ -3477,7 +3478,7 @@ class Component extends DCLogic {
     // efficiency gauge
     const eSmv = this.n(s.es), eu = this.n(s.eu);
     const et = this.n(s.et) || 1, ew = this.n(s.ew) || 1;
-    let gaugeTxt = dash, gaugeCol = '#94A3B8', garcD = '';
+    let gaugeTxt = dash, gaugeCol = '#bcbbdc', garcD = '';
     if (eSmv && eu) {
       const pct = (eSmv * eu) / (et * ew) * 100;
       const p = Math.max(0, Math.min(99.9, pct));
@@ -3493,19 +3494,19 @@ class Component extends DCLogic {
 
     // elements
     const ec = this.elCalc();
-    const shareCols = ['#2E75B6', '#A78BFA', '#F59E0B', '#34D399', '#F0997B', '#94A3B8'];
+    const shareCols = ['#2E75B6', '#A78BFA', '#F59E0B', '#34D399', '#F0997B', '#bcbbdc'];
     const els = ec.rows.map((r, i) => {
       const active = i === s.sel;
       return {
         num: String(i + 1), name: r.el.name, nameTxt: r.el.name || 'Element ' + (i + 1), r: r.el.r,
-        n: String(r.t.n), nCol: r.t.ok ? '#94A3B8' : '#FAC775',
+        n: String(r.t.n), nCol: r.t.ok ? '#bcbbdc' : '#FAC775',
         mean: r.t.n ? r.mean.toFixed(3) : dash,
         bt: r.t.n ? r.bt.toFixed(3) : dash,
         smv: r.t.n ? r.smv.toFixed(3) : dash,
-        rowBg: active ? '#112240' : 'transparent',
+        rowBg: active ? '#12143a' : 'transparent',
         dotBg: active ? '#64B5F6' : 'transparent',
-        dotBd: active ? '#64B5F6' : '#2E4A6F',
-        dotC: active ? '#0B1929' : '#94A3B8',
+        dotBd: active ? '#64B5F6' : '#454b92',
+        dotC: active ? '#070a1a' : '#bcbbdc',
         select: () => this.setState({ sel: i }),
         onName: e => { const a = s.els.slice(); a[i] = Object.assign({}, a[i], { name: e.target.value }); this.setState({ els: a }); },
         onR: e => { const a = s.els.slice(); a[i] = Object.assign({}, a[i], { r: e.target.value }); this.setState({ els: a }); },
@@ -3625,11 +3626,11 @@ class Component extends DCLogic {
       tTrC: s.tab === 'trk' ? on : off, tTrB: s.tab === 'trk' ? on : clear,
       tPrC: s.tab === 'prac' ? on : off, tPrB: s.tab === 'prac' ? on : clear,
       pObBg: s.tab === 'obs' ? '#1D4E89' : 'transparent',
-      pObBd: s.tab === 'obs' ? '#2E75B6' : '#2E4A6F',
-      pObC: s.tab === 'obs' ? '#E2E8F0' : '#94A3B8',
-      pObDot: s.tab === 'obs' ? '#64B5F6' : '#64748B',
+      pObBd: s.tab === 'obs' ? '#2E75B6' : '#454b92',
+      pObC: s.tab === 'obs' ? '#f2f1ff' : '#bcbbdc',
+      pObDot: s.tab === 'obs' ? '#64B5F6' : '#8f8eb8',
       saveTxt: s.exampleOn ? 'EXAMPLE DATA' : s.saved ? 'RESTORED' : 'SAVING',
-      saveCol: s.exampleOn ? '#FAC775' : '#94A3B8',
+      saveCol: s.exampleOn ? '#FAC775' : '#bcbbdc',
       saveDot: s.exampleOn ? '#F59E0B' : '#2E9E86',
       loadExample: () => this.setState({
         els: JSON.parse(JSON.stringify(this.EXAMPLE.els)),
@@ -3644,8 +3645,8 @@ class Component extends DCLogic {
       goOv: () => this.setState({ tab: 'ov' }), goCalc: () => this.setState({ tab: 'calc' }),
       goObs: () => this.setState({ tab: 'obs' }), goTrk: () => this.setState({ tab: 'trk' }),
       goPrac: () => this.setState({ tab: 'prac' }),
-      s100B: b === 100 ? on : clear, s100C: b === 100 ? '#0B1929' : '#94A3B8',
-      s75B: b === 75 ? on : clear, s75C: b === 75 ? '#0B1929' : '#94A3B8',
+      s100B: b === 100 ? on : clear, s100C: b === 100 ? '#070a1a' : '#bcbbdc',
+      s75B: b === 75 ? on : clear, s75C: b === 75 ? '#070a1a' : '#bcbbdc',
       sc100: () => this.setScale(100), sc75: () => this.setScale(75),
 
       ot: s.ot, allow: s.allow, rating: s.rating, ratingTxt: String(s.rating), rMin, rMax, rTicks,
@@ -3667,8 +3668,8 @@ class Component extends DCLogic {
         const tot = this.iloSpec.reduce((a, sp) => a + (p.v[sp[0]] || 0), 0) + 9;
         const active = this.iloSpec.every(sp => this.n(s.ilo[sp[0]]) === (p.v[sp[0]] || 0));
         return { lbl: p.lbl, sub: p.sub, tot: tot + '%',
-          bg: active ? '#412402' : '#0B1929', bd: active ? '#D97706' : '#1E3A5F',
-          c: active ? '#FAC775' : '#CBD5E1',
+          bg: active ? '#412402' : '#070a1a', bd: active ? '#D97706' : '#343a7a',
+          c: active ? '#FAC775' : '#dcdbf2',
           apply: () => this.setState({ ilo: Object.assign({}, p.v), allow: String(tot), tsA: String(tot), iloApplied: true, iloSnapped: false }) };
       }),
       applyIlo: () => this.setState({ allow: String(iloTotal), tsA: String(iloTotal), iloApplied: true, iloSnapped: false }),
@@ -3745,10 +3746,10 @@ class Component extends DCLogic {
       readings, stats, ch: this.chart(t),
       selBT: t.ok ? selBTv.toFixed(3) + ' min' : dash,
       selSMV: t.ok ? (selBTv * (1 + this.n(s.tsA) / 100)).toFixed(3) + ' min' : dash,
-      c90B: s.conf === 90 ? on : clear, c90C: s.conf === 90 ? '#0B1929' : '#94A3B8',
-      c95B: s.conf === 95 ? on : clear, c95C: s.conf === 95 ? '#0B1929' : '#94A3B8',
-      a5B: s.acc === 5 ? on : clear, a5C: s.acc === 5 ? '#0B1929' : '#94A3B8',
-      a10B: s.acc === 10 ? on : clear, a10C: s.acc === 10 ? '#0B1929' : '#94A3B8',
+      c90B: s.conf === 90 ? on : clear, c90C: s.conf === 90 ? '#070a1a' : '#bcbbdc',
+      c95B: s.conf === 95 ? on : clear, c95C: s.conf === 95 ? '#070a1a' : '#bcbbdc',
+      a5B: s.acc === 5 ? on : clear, a5C: s.acc === 5 ? '#070a1a' : '#bcbbdc',
+      a10B: s.acc === 10 ? on : clear, a10C: s.acc === 10 ? '#070a1a' : '#bcbbdc',
       conf90: () => this.setState({ conf: 90 }), conf95: () => this.setState({ conf: 95 }),
       acc5: () => this.setState({ acc: 5 }), acc10: () => this.setState({ acc: 10 }),
       opTxt: t.ok ? t.n + ' / ' + t.nR + ' REQUIRED' : t.n + (t.n === 1 ? ' READING' : ' READINGS') + ' — NEED AT LEAST 2',
@@ -3767,14 +3768,14 @@ class Component extends DCLogic {
         this.setState({ els: a });
       },
 
-      swMain, swCol: s.swRun ? '#34D399' : '#CBD5E1',
+      swMain, swCol: s.swRun ? '#34D399' : '#dcdbf2',
       swSub: s.swRun
         ? (freeSlot < 0 ? 'RUNNING · ALL 10 SLOTS FULL' : 'RUNNING · NEXT SLOT ' + (freeSlot + 1))
         : (freeSlot < 0 ? 'STOPPED · ALL 10 SLOTS FULL' : 'STOPPED · NEXT SLOT ' + (freeSlot + 1)),
       swBtnTxt: s.swRun ? 'Stop' : 'Start',
       swBtnBg: s.swRun ? '#4A1B0C' : '#12352E',
       swBtnBd: s.swRun ? '#EF4444' : '#2E9E86',
-      swBtnC: s.swRun ? '#F0997B' : '#E2E8F0',
+      swBtnC: s.swRun ? '#F0997B' : '#f2f1ff',
       swToggle: () => { if (s.swRun) this.swStop(); else this.swStart(); },
       swReset: () => { this.swStop(); this.setState({ swBase: 0, swNow: 0 }); },
       swLap: () => {
@@ -3786,9 +3787,9 @@ class Component extends DCLogic {
 
       mostParams, mostSeq, mostExamples,
       mmSeq: mdl.seq, mmDesc: mdl.desc,
-      mmGmB: s.mostModel === 'gm' ? '#412402' : 'transparent', mmGmC: s.mostModel === 'gm' ? '#F0997B' : '#94A3B8',
-      mmCmB: s.mostModel === 'cm' ? '#412402' : 'transparent', mmCmC: s.mostModel === 'cm' ? '#F0997B' : '#94A3B8',
-      mmTuB: s.mostModel === 'tu' ? '#412402' : 'transparent', mmTuC: s.mostModel === 'tu' ? '#F0997B' : '#94A3B8',
+      mmGmB: s.mostModel === 'gm' ? '#412402' : 'transparent', mmGmC: s.mostModel === 'gm' ? '#F0997B' : '#bcbbdc',
+      mmCmB: s.mostModel === 'cm' ? '#412402' : 'transparent', mmCmC: s.mostModel === 'cm' ? '#F0997B' : '#bcbbdc',
+      mmTuB: s.mostModel === 'tu' ? '#412402' : 'transparent', mmTuC: s.mostModel === 'tu' ? '#F0997B' : '#bcbbdc',
       mmGm: setModel('gm'), mmCm: setModel('cm'), mmTu: setModel('tu'),
       mIdx: String(mIdx), mTMU: mTMU + ' TMU', mSec: mSecV.toFixed(2) + ' sec', mMin: (mSecV / 60).toFixed(4) + ' min',
       exD: s.exD, hasExD: !!s.exD,
@@ -3799,17 +3800,17 @@ class Component extends DCLogic {
 
       opTabs: s.ops.map((o, i) => ({
         n: o.n, bg: i === opIdx ? '#12352E' : 'transparent',
-        bd: i === opIdx ? '#2E9E86' : '#2E4A6F', c: i === opIdx ? '#34D399' : '#94A3B8',
+        bd: i === opIdx ? '#2E9E86' : '#454b92', c: i === opIdx ? '#34D399' : '#bcbbdc',
         select: () => this.setState({ selOp: i })
       })),
       trkName: op.n || dash, trkCount: String(log.length),
       trkEmpty: log.length === 0, trkHas: log.length > 0,
       trkLatest: log.length ? latest.toFixed(1) + '%' : dash,
-      trkLatestCol: log.length ? effCol(latest) : '#94A3B8',
+      trkLatestCol: log.length ? effCol(latest) : '#bcbbdc',
       trkAvg: effs.length ? (effs.reduce((a, x) => a + x, 0) / effs.length).toFixed(1) + '%' : dash,
       trkBest: effs.length ? Math.max.apply(null, effs).toFixed(1) + '%' : dash,
       trkTrend: delta === null ? dash : (delta >= 0 ? '+' : '') + delta.toFixed(1),
-      trkTrendCol: delta === null ? '#94A3B8' : delta >= 0 ? '#34D399' : '#EF4444',
+      trkTrendCol: delta === null ? '#bcbbdc' : delta >= 0 ? '#34D399' : '#EF4444',
       trkBars, trkRows,
       trkLine90: (90 / 110 * 100).toFixed(1) + '%', trkLine75: (75 / 110 * 100).toFixed(1) + '%',
       lgName: s.lgName, lgDate: s.lgDate, lgU: s.lgU, lgS: s.lgS, lgT: s.lgT,
@@ -3831,7 +3832,7 @@ class Component extends DCLogic {
       lgWarn: lgEffV > 150,
       lgWarnTxt: 'Check the units and minutes. At ' + this.n(s.lgS) + ' min per unit, one operator can make about '
         + Math.floor(this.n(s.lgT) / Math.max(0.001, this.n(s.lgS))) + ' units in ' + this.n(s.lgT) + ' minutes.',
-      lgEffCol: lgEffV ? effCol(lgEffV) : '#94A3B8',
+      lgEffCol: lgEffV ? effCol(lgEffV) : '#bcbbdc',
       logged: s.logged,
       addLog: () => {
         if (!lgEffV) return;
