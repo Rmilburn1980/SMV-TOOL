@@ -2137,7 +2137,7 @@
 
           <sc-if value="{{ sumHasData }}">
             <div style="border-top:1px solid #343a7a;padding-top:16px">
-              <div style="overflow-x:auto">
+              <div tabindex="0" role="region" aria-label="Table, scrolls sideways" style="overflow-x:auto">
                 <div style="min-width:520px">
                   <div style="display:grid;grid-template-columns:1.8fr 44px 84px 64px 84px 104px;gap:8px;padding-bottom:7px;border-bottom:1px solid #343a7a;font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">
                     <span>ELEMENT</span><span style="text-align:right">n</span><span style="text-align:right">MEAN</span><span style="text-align:right">RATING</span><span style="text-align:right">BASIC</span><span style="text-align:right">SMV</span>
@@ -2266,7 +2266,7 @@
                 <div style="font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">RATING BASE {{ scaleTxt }} · ALLOWANCE {{ allowTxt }}</div>
               </div>
 
-              <div style="overflow-x:auto">
+              <div tabindex="0" role="region" aria-label="Table, scrolls sideways" style="overflow-x:auto">
                 <div style="min-width:640px">
                   <div style="display:grid;grid-template-columns:26px 1.6fr 52px 82px 62px 82px 112px 30px;gap:8px;padding:0 0 7px;border-bottom:1px solid #343a7a;font:400 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;color:#bcbbdc">
                     <span></span><span>ELEMENT</span><span style="text-align:right">n</span><span style="text-align:right">MEAN</span><span style="text-align:right">RATING</span><span style="text-align:right">BASIC</span><span style="text-align:right">SMV</span><span></span>
@@ -2373,19 +2373,19 @@
                     </sc-if>
                     <sc-if value="{{ ch.hasData }}">
                       <g>
-                        <rect x="0" y="{{ ch.bandY }}" width="222" height="{{ ch.bandH }}" fill="#D97706" opacity="0.13"></rect>
-                        <line x1="0" y1="{{ ch.meanY }}" x2="222" y2="{{ ch.meanY }}" stroke="#2E9E86" stroke-width="1" stroke-dasharray="6,4"></line>
-                        <rect x="{{ ch.b0.x }}" y="{{ ch.b0.y }}" width="16" height="{{ ch.b0.h }}" fill="{{ ch.b0.f }}"></rect>
-                        <rect x="{{ ch.b1.x }}" y="{{ ch.b1.y }}" width="16" height="{{ ch.b1.h }}" fill="{{ ch.b1.f }}"></rect>
-                        <rect x="{{ ch.b2.x }}" y="{{ ch.b2.y }}" width="16" height="{{ ch.b2.h }}" fill="{{ ch.b2.f }}"></rect>
-                        <rect x="{{ ch.b3.x }}" y="{{ ch.b3.y }}" width="16" height="{{ ch.b3.h }}" fill="{{ ch.b3.f }}"></rect>
-                        <rect x="{{ ch.b4.x }}" y="{{ ch.b4.y }}" width="16" height="{{ ch.b4.h }}" fill="{{ ch.b4.f }}"></rect>
-                        <rect x="{{ ch.b5.x }}" y="{{ ch.b5.y }}" width="16" height="{{ ch.b5.h }}" fill="{{ ch.b5.f }}"></rect>
-                        <rect x="{{ ch.b6.x }}" y="{{ ch.b6.y }}" width="16" height="{{ ch.b6.h }}" fill="{{ ch.b6.f }}"></rect>
-                        <rect x="{{ ch.b7.x }}" y="{{ ch.b7.y }}" width="16" height="{{ ch.b7.h }}" fill="{{ ch.b7.f }}"></rect>
-                        <rect x="{{ ch.b8.x }}" y="{{ ch.b8.y }}" width="16" height="{{ ch.b8.h }}" fill="{{ ch.b8.f }}"></rect>
-                        <rect x="{{ ch.b9.x }}" y="{{ ch.b9.y }}" width="16" height="{{ ch.b9.h }}" fill="{{ ch.b9.f }}"></rect>
-                        <text x="226" y="{{ ch.meanLblY }}" font-size="7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#2E9E86">x̄</text>
+                        <rect x="0" sc-camel-y="{{ ch.bandY }}" width="222" sc-camel-height="{{ ch.bandH }}" fill="#D97706" opacity="0.13"></rect>
+                        <line x1="0" sc-camel-y1="{{ ch.meanY }}" x2="222" sc-camel-y2="{{ ch.meanY }}" stroke="#2E9E86" stroke-width="1" stroke-dasharray="6,4"></line>
+                        <rect sc-camel-x="{{ ch.b0.x }}" sc-camel-y="{{ ch.b0.y }}" width="16" sc-camel-height="{{ ch.b0.h }}" fill="{{ ch.b0.f }}"></rect>
+                        <rect sc-camel-x="{{ ch.b1.x }}" sc-camel-y="{{ ch.b1.y }}" width="16" sc-camel-height="{{ ch.b1.h }}" fill="{{ ch.b1.f }}"></rect>
+                        <rect sc-camel-x="{{ ch.b2.x }}" sc-camel-y="{{ ch.b2.y }}" width="16" sc-camel-height="{{ ch.b2.h }}" fill="{{ ch.b2.f }}"></rect>
+                        <rect sc-camel-x="{{ ch.b3.x }}" sc-camel-y="{{ ch.b3.y }}" width="16" sc-camel-height="{{ ch.b3.h }}" fill="{{ ch.b3.f }}"></rect>
+                        <rect sc-camel-x="{{ ch.b4.x }}" sc-camel-y="{{ ch.b4.y }}" width="16" sc-camel-height="{{ ch.b4.h }}" fill="{{ ch.b4.f }}"></rect>
+                        <rect sc-camel-x="{{ ch.b5.x }}" sc-camel-y="{{ ch.b5.y }}" width="16" sc-camel-height="{{ ch.b5.h }}" fill="{{ ch.b5.f }}"></rect>
+                        <rect sc-camel-x="{{ ch.b6.x }}" sc-camel-y="{{ ch.b6.y }}" width="16" sc-camel-height="{{ ch.b6.h }}" fill="{{ ch.b6.f }}"></rect>
+                        <rect sc-camel-x="{{ ch.b7.x }}" sc-camel-y="{{ ch.b7.y }}" width="16" sc-camel-height="{{ ch.b7.h }}" fill="{{ ch.b7.f }}"></rect>
+                        <rect sc-camel-x="{{ ch.b8.x }}" sc-camel-y="{{ ch.b8.y }}" width="16" sc-camel-height="{{ ch.b8.h }}" fill="{{ ch.b8.f }}"></rect>
+                        <rect sc-camel-x="{{ ch.b9.x }}" sc-camel-y="{{ ch.b9.y }}" width="16" sc-camel-height="{{ ch.b9.h }}" fill="{{ ch.b9.f }}"></rect>
+                        <text x="226" sc-camel-y="{{ ch.meanLblY }}" font-size="7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#2E9E86">x̄</text>
                         <line x1="0" y1="78" x2="222" y2="78" stroke="#343a7a" stroke-width="1"></line>
                         <text x="11" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">1</text>
                         <text x="33" y="90" text-anchor="middle" font-size="6.5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" fill="#bcbbdc">2</text>
@@ -2514,7 +2514,7 @@
           </div>
           <div style="display:flex;height:22px;background:#070a1a;border:1px solid #343a7a">
             <div style="width:{{ barBT }};background:#1D4E89;display:flex;align-items:center;justify-content:center;overflow:hidden;font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;color:#90CAF9;transition:width .35s ease">{{ barBTLbl }}</div>
-            <div style="width:{{ barA }};background:#8A4B12;display:flex;align-items:center;justify-content:center;overflow:hidden;font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;color:#FAC775;transition:width .35s ease">{{ barALbl }}</div>
+            <div style="width:{{ barA }};background:#8A4B12;display:flex;align-items:center;justify-content:center;overflow:hidden;font:500 9px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.08em;color:#FFE4B8;transition:width .35s ease">{{ barALbl }}</div>
           </div>
           <div style="display:flex;gap:16px;margin-top:8px">
             <span style="display:flex;align-items:center;gap:6px;font:400 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#bcbbdc"><span style="width:8px;height:8px;background:#1D4E89;display:block"></span>BASIC TIME</span>
@@ -2566,7 +2566,7 @@
                   <text x="103.5" y="51.6">100</text>
                 </g>
                 <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#343a7a" stroke-width="7"></path>
-                <path d="{{ garcD }}" fill="none" stroke="{{ gaugeCol }}" stroke-width="7"></path>
+                <path sc-camel-d="{{ garcD }}" fill="none" stroke="{{ gaugeCol }}" stroke-width="7"></path>
                 <text x="50" y="55" text-anchor="middle" font-size="5" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif" letter-spacing="0.8" fill="#bcbbdc">EFFICIENCY</text>
               </svg>
               <div style="position:absolute;left:0;right:0;top:62%;transform:translateY(-50%);text-align:center;font:500 30px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;line-height:1;color:{{ gaugeCol }}">{{ gaugeTxt }}</div>
@@ -2660,7 +2660,7 @@
             <span style="font:500 28px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#F59E0B;line-height:1">{{ iloTotal }}</span>
           </div>
           <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
-            <button onClick="{{ applyIlo }}" style="padding:9px 14px;background:#8A4B12;border:1px solid #D97706;color:#FAC775;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#D97706">Apply to calculator</button>
+            <button onClick="{{ applyIlo }}" style="padding:9px 14px;background:#8A4B12;border:1px solid #D97706;color:#FFE4B8;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#D97706">Apply to calculator</button>
             <button onClick="{{ resetIlo }}" style="padding:9px 14px;background:transparent;border:1px solid #454b92;color:#bcbbdc;cursor:pointer;font:600 11px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase" style-hover="border-color:#64B5F6;color:#f2f1ff">Reset table</button>
           </div>
           <sc-if value="{{ iloSnapped }}">
@@ -3268,6 +3268,13 @@ class Component extends DCLogic {
         patch.ilo = snapped;
       }
       patch.saved = true;
+    } else {
+      // First visit: open on the worked example, labelled EXAMPLE DATA, so the tool
+      // is not empty. CLEAR leaves a saved blank study, so it opens empty after that.
+      patch.els = JSON.parse(JSON.stringify(this.EXAMPLE.els));
+      patch.ops = JSON.parse(JSON.stringify(this.EXAMPLE.ops));
+      patch.sel = 0; patch.selOp = 0; patch.exampleOn = true;
+      patch.mdProduct = 'Door panel'; patch.mdOp = 'Weld seam'; patch.mdObserver = 'Example study'; patch.mdDate = '2026-09-16';
     }
     this.setState(patch);
   }
@@ -3649,7 +3656,7 @@ class Component extends DCLogic {
         mdProduct: 'Door panel', mdOp: 'Weld seam', mdObserver: 'Example study', mdDate: '2026-09-16'
       }),
       clearSaved: () => {
-        try { window.localStorage.removeItem(this.SKEY); } catch (err) { /* noop */ }
+        try { window.localStorage.setItem(this.SKEY, JSON.stringify({ exampleOn: false })); } catch (err) { /* noop */ }
         window.location.reload();
       },
       goOv: () => this.setState({ tab: 'ov' }), goCalc: () => this.setState({ tab: 'calc' }),
@@ -3883,30 +3890,5 @@ class Component extends DCLogic {
 }
 </script>
 <script>(function(){var s=document.createElement('style');s.textContent='.rm-disc{max-width:900px;margin:24px auto;padding:0 16px 24px;font:13px/1.5 system-ui,-apple-system,\'Segoe UI\',Roboto,Arial,sans-serif;color:#c9c8e6;text-align:center}@media print{.rm-disc{color:#000!important}}';document.head.appendChild(s);var p=document.createElement('p');p.className='rm-disc';p.setAttribute('role','note');p.textContent='Decision support only. It does not replace a competent person\'s judgement, a formal assessment or your own legal duties, and nothing here is a certification, audit result or proof of compliance. Provided free and as is, without warranty. If you enter names, your employer is responsible for that data. Use initials or roles, and follow your company\'s data rules.';function go(){document.documentElement.appendChild(p);}if(document.readyState==='complete')go();else addEventListener('load',go);})();</script>
-<!-- Back to portfolio hub: paste this block just before </body> on every dashboard page -->
-<script>
-(function(){
-  if (document.getElementById('hub-link-host')) return;
-  var host = document.createElement('rm-hub-link');
-  host.id = 'hub-link-host';
-  host.style.cssText = 'display:block!important;position:static!important;visibility:visible!important;opacity:1!important;';
-  var root = host.attachShadow({mode:'open'});
-  root.innerHTML =
-    '<style>' +
-    ':host{all:initial}' +
-    'a{position:fixed;left:12px;bottom:12px;z-index:2147483647;display:inline-flex;align-items:center;' +
-    'min-height:44px;padding:0 16px;border-radius:999px;box-sizing:border-box;' +
-    'font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;' +
-    'color:#f2f1ff;text-decoration:none;background:#1b1946;border:1px solid #8b78ff;' +
-    'box-shadow:0 0 18px rgba(139,92,246,.55);pointer-events:auto;cursor:pointer;-webkit-tap-highlight-color:transparent}' +
-    'a:hover,a:focus-visible{border-color:#22d3ee;outline:2px solid #22d3ee;outline-offset:2px}' +
-    '@media print{a{display:none}}' +
-    '</style>' +
-    '<a href="https://rmilburn1980.github.io/" target="_top" aria-label="Back to Richard Milburn\'s portfolio hub">← Portfolio hub</a>';
-  /* attach to <html>, not <body>, so a transform or overflow on body cannot trap or clip it */
-  document.documentElement.appendChild(host);
-})();
-</script>
-<noscript><a href="https://rmilburn1980.github.io/" style="position:fixed;left:12px;bottom:12px;padding:12px 16px;background:#1b1946;color:#f2f1ff;border:1px solid #8b78ff;border-radius:999px;font:700 14px system-ui,sans-serif;text-decoration:none">&larr; Portfolio hub</a></noscript>
 </body>
 </html>
