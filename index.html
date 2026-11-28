@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Standard Minute Value tool | Richard Milburn</title>
+<title>Standard Minute Value Tool</title>
 <meta name="description" content="Time study, SMV, line efficiency and production targets, with MOST sequence models.">
-<meta property="og:title" content="Standard Minute Value tool | Richard Milburn">
+<meta property="og:title" content="Standard Minute Value Tool">
 <meta property="og:description" content="Time study, SMV, line efficiency and production targets, with MOST sequence models.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rmilburn1980.github.io/SMV-TOOL/">
@@ -1930,7 +1930,7 @@
 </script>
 <link rel="stylesheet" href="https://rmilburn1980.github.io/theme.css">
 </head>
-<body><a href="https://rmilburn1980.github.io/" style="display:block;padding:10px 20px;background:#11192B;border-bottom:1px solid #2A3A52;color:#00D9C0;font-size:14px;font-weight:600;text-decoration:none;">&larr; Back to portfolio hub</a>
+<body><nav aria-label="Portfolio"><a href="https://rmilburn1980.github.io/" style="display:block;padding:10px 20px;background:#11192B;border-bottom:1px solid #2A3A52;color:#00D9C0;font-size:14px;font-weight:600;text-decoration:none;">&larr; Back to portfolio hub</a></nav>
 <x-dc>
 <helmet>
 <style>
@@ -1948,14 +1948,14 @@
   select { -webkit-appearance: none; appearance: none; }
 </style>
 </helmet>
-<div style="min-height:100vh;background:#070a1a;color:#f2f1ff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding-bottom:64px">
+<div role="main" style="min-height:100vh;background:#070a1a;color:#f2f1ff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;padding-bottom:64px">
 
   <div style="border-bottom:1px solid #343a7a;background:#12143a;position:sticky;top:0;z-index:5">
     <div style="max-width:1240px;margin:0 auto;padding:14px 18px 0">
       <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:12px">
         <div>
           <div style="font:600 10px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#bcbbdc;margin-bottom:4px">Industrial engineering · work measurement</div>
-          <div style="font:600 20px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:-.01em">Standard Minute Value</div>
+          <h1 style="margin:0;font:600 20px -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:-.01em">Standard Minute Value</h1>
         </div>
         <div style="display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;padding-bottom:2px">
           <div>
@@ -3718,7 +3718,7 @@ class Component extends DCLogic {
         && ec.rows.filter(r => r.t.n > 0).every(r => this.n(r.el.r) === b),
       flatRatingTxt: 'Every element is rated exactly ' + b + '. That is rare in a real study — check whether some steps were genuinely faster or slower than standard pace before you rely on this SMV.',
       sumTitle: ([s.mdProduct, s.mdOp].filter(x => (x || '').trim()).join(' — ')) || 'Untitled study',
-      sumMeta: [s.mdObserver ? 'Observed by ' + s.mdObserver : '', s.mdDate || '', s.exampleOn ? 'Example data' : '']
+      sumMeta: [s.mdObserver ? 'Observed by ' + s.mdObserver : '', s.mdDate ? s.mdDate.split('-').reverse().join('/') : '', s.exampleOn ? 'Example data' : '']
         .filter(x => x).join('  ·  ') || 'No observer or date recorded',
       sumEmpty: ec.totalSmv <= 0,
       sumHasData: ec.totalSmv > 0,
@@ -3843,7 +3843,7 @@ class Component extends DCLogic {
       onMdObserver: e => this.setState({ mdObserver: e.target.value }),
       onMdDate: e => this.setState({ mdDate: e.target.value }),
       studyLabel: ([s.mdProduct, s.mdOp].filter(x => (x || '').trim()).join(' / ')
-        + (s.mdDate ? (((s.mdProduct || s.mdOp) ? ' · ' : '') + s.mdDate) : '')) || 'UNTITLED STUDY',
+        + (s.mdDate ? (((s.mdProduct || s.mdOp) ? ' · ' : '') + s.mdDate.split('-').reverse().join('/')) : '')) || 'UNTITLED STUDY',
       onLgT: e => this.setState({ lgT: e.target.value }),
       lgEff: lgEffV ? lgEffV.toFixed(1) + '%' : dash,
       lgWarn: lgEffV > 150,
@@ -3889,6 +3889,7 @@ class Component extends DCLogic {
   }
 }
 </script>
-<script>(function(){var s=document.createElement('style');s.textContent='.rm-disc{max-width:900px;margin:24px auto;padding:0 16px 24px;font:13px/1.5 system-ui,-apple-system,\'Segoe UI\',Roboto,Arial,sans-serif;color:#c9c8e6;text-align:center}@media print{.rm-disc{color:#000!important}}';document.head.appendChild(s);var p=document.createElement('p');p.className='rm-disc';p.setAttribute('role','note');p.textContent='Decision support only. It does not replace a competent person\'s judgement, a formal assessment or your own legal duties, and nothing here is a certification, audit result or proof of compliance. Provided free and as is, without warranty. If you enter names, your employer is responsible for that data. Use initials or roles, and follow your company\'s data rules.';function go(){document.documentElement.appendChild(p);}if(document.readyState==='complete')go();else addEventListener('load',go);})();</script>
+<nav aria-label="Related tools" class="rm-related" style="max-width:900px;margin:28px auto 0;padding:0 16px;font:14px/1.5 'Special Gothic',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;color:#c9c8e6"><h2 style="font-size:15px;margin:0 0 8px;color:#f1f5f9">Related tools</h2><ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 18px"><li style="margin:0"><a href="https://rmilburn1980.github.io/line-balancing.html" style="color:#00D9C0;text-decoration:underline">Line balancing</a></li><li style="margin:0"><a href="https://rmilburn1980.github.io/standard-work-sheet.html" style="color:#00D9C0;text-decoration:underline">Standard work sheet</a></li><li style="margin:0"><a href="https://rmilburn1980.github.io/cycle-time-waste-tool.html" style="color:#00D9C0;text-decoration:underline">Cycle time and waste analysis</a></li><li style="margin:0"><a href="https://rmilburn1980.github.io/toc-simulator.html" style="color:#00D9C0;text-decoration:underline">TOC bottleneck simulator</a></li><li style="margin:0"><a href="https://rmilburn1980.github.io/#problems" style="color:#00D9C0;text-decoration:underline">Start from the problem</a></li></ul></nav>
+<script>(function(){var s=document.createElement('style');s.textContent='.rm-disc{max-width:900px;margin:24px auto;padding:0 16px 24px;font:13px/1.5 system-ui,-apple-system,\'Segoe UI\',Roboto,Arial,sans-serif;color:#c9c8e6;text-align:center}@media print{.rm-disc{color:#000!important}}';document.head.appendChild(s);var p=document.createElement('p');p.className='rm-disc';p.setAttribute('role','note');p.textContent='Decision support only. It does not replace a competent person\'s judgement, a formal assessment or your own legal duties, and nothing here is a certification, audit result or proof of compliance. Provided free and as is, without warranty. If you enter names, your employer is responsible for that data. Use initials or roles, and follow your company\'s data rules.';function go(){var f=document.createElement('footer');f.appendChild(p);document.body.appendChild(f);}if(document.readyState==='complete')go();else addEventListener('load',go);})();</script>
 </body>
 </html>
